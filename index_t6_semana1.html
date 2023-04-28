@@ -1,0 +1,53 @@
+<meta charset="UTF-8">
+<script>
+    function cabecalho() {
+        document.write("<h1> >> COMEX << </h1>");
+        document.write("<h2> :: Lista de Clientes </h1>");
+        document.write("<hr>");
+    }
+
+    function conteudo() {
+        var anoAtual = 2023;
+        var anoNascimentoFulano = 1980;
+        var anoNascimentoBeltrano = 1981;
+        var anoNascimentoSicrano = 1984;
+
+        document.write("<h3> - Código: 1 </h3>");
+        document.write("<p> Nome: Fulano </p>");
+        document.write("<p> Mês de nascimento: Fevereiro </p>");
+        document.write("<p> Ano de nascimento: 1980 </p>");
+        document.write("<hr>");
+        document.write("<h3> - Código: 2 </h3>");
+        document.write("<p> Nome: Beltrano </p>");
+        document.write("<p> Mês de nascimento: Maio </p>");
+        document.write("<p> Ano de nascimento: 1981 </p>");
+        document.write("<hr>");
+        document.write("<h3> - Código: 3 </h3>");
+        document.write("<p> Nome: Sicrano </p>");
+        document.write("<p> Mês de nascimento: Novembro </p>");
+        document.write("<p> Ano de nascimento: 1984 </p>");
+
+        var idadeFulano = anoAtual - anoNascimentoFulano;
+        var idadeBeltrano = anoAtual - anoNascimentoBeltrano;
+        var idadeBeltrano = anoAtual - anoNascimentoSicrano;
+
+        var somaIdades = idadeFulano + idadeBeltrano + idadeBeltrano;
+        var mediaIdades = somaIdades / 3;
+
+        document.write("<hr>");
+        document.write("*** Estatística ***");
+        document.write("<br>");
+        document.write("Soma das idades: " + somaIdades);
+        document.write("<br>");
+        document.write("Média das idades: " + Math.round(mediaIdades));
+    }
+
+    function rodape() {
+        document.write("<hr>");
+        document.write(".:: Alura LEVEL UP ::.");
+    }
+
+    cabecalho();
+    conteudo();
+    rodape();
+</script>

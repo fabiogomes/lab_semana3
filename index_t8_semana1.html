@@ -1,0 +1,40 @@
+<meta charset="UTF-8">
+<script>
+    function exosfera() {
+        document.write("====^ ENTRANDO NA CAMADA EXOSFERA [500KM] ^========<br>");
+        document.write("**********(SATÉLITES)*******(TELESCÓPIOS)**********<br>");
+        document.write("====v SAINDO DA CAMADA EXOSFERA v==================<br>");
+    }
+
+    function termosfera() {
+        document.write("====^ ENTRANDO NA CAMADA TERMOSFERA [500KM] ^======<br>");
+        exosfera();
+        document.write("====v SAINDO DA CAMADA TERMOSFERA v================<br>");
+    }
+
+    function mesosfera() {
+        document.write("====^ ENTRANDO NA CAMADA MESOSFERA [80KM] ^========<br>");
+        termosfera();
+        document.write("====v SAINDO DA CAMADA MESOSFERA v=================<br>");
+    }
+
+    function estratosfera() {
+        document.write("====^ ENTRANDO NA CAMADA ESTRATOSFERA [50KM] ^=====<br>");
+        mesosfera();
+        document.write("====v SAINDO DA CAMADA ESTRATOSFERA v==============<br>");
+    }
+
+    function troposfera() {
+        document.write("====^ ENTRANDO NA CAMADA TROPOSFERA [15KM] ^=======<br>");
+        estratosfera();
+        document.write("====v SAINDO DA CAMADA TROPOSFERA v================<br>");
+    }
+
+    function lancarFoguete() {
+        document.write("^^^ Lançamento autorizado ^^^<br>");
+        troposfera();
+        document.write("___ Aterrisagem perfeita!!! ___<br>");
+    }
+
+    lancarFoguete();
+</script>

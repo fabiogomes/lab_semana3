@@ -1,0 +1,45 @@
+<meta charset="UTF-8">
+<script>
+    function cabecalho() {
+        document.write("<h1> >> COMEX << </h1>");
+        document.write("<hr>");
+    }
+
+    function conteudo() {
+        var titulo1 = "1. Visão do produto";
+        var titulo2 = "2. Entidades importantes";
+        var titulo3 = "3. Requisitos não funcionais";
+        var titulo4 = "4. Requisitos funcionais";
+
+        document.write("<h3>" + titulo1 + "</h3>");
+        document.write("<p>O projeto <strong>Comex</strong> é um sistema de e-commerce marketplace. Seu objetivo é permitir que a sua base de clientes tenha acesso a vários vendedores e, assim, consolidar-se como o shopping eletrônico mais popular da internet.</p>");
+        document.write("<h3>" + titulo2 + "</h3>");
+        document.write("<ul>");
+        document.write("<li>Produto</li>");
+        document.write("<li>Categoria</li>");
+        document.write("<li>Cliente</li>");
+        document.write("<li>Pedido</li>");
+        document.write("<li>ItemDePedido</li>");
+        document.write("</ul>");
+        document.write("<h3>" + titulo3 + "</h3>");
+        document.write("<ul>");
+        document.write("<li>Manutenibilidade</li>");
+        document.write("</ul>");
+        document.write("<h3>" + titulo4 + "</h3>");
+        document.write("<p>Os requisitos funcionais são classificados em três categorias no Comex:</p>");
+
+        document.write("<p><strong>Essencial:</strong> implementação obrigatória para o sistema atingir seu objetivo principal:<p>");
+        document.write("<p><strong>Importante:</strong> acrescentam muito valor ao negócio;</p>");
+        document.write("<p><strong>Desejável:</strong> incrementam usabilidade e funcionalidades.</p>");
+    }
+
+    function rodape() {
+        document.write("<hr>");
+        document.write(".:: Alura LEVEL UP ::.");
+	    alert("*** Bem vindo ao Comex ***");
+    }
+
+    cabecalho();
+    conteudo();
+    rodape();
+</script>
