@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<meta charset = "UTF-8">
+<html>
+<head>
+<title> >>NASA<< </title>
+</head>
+
+<body>
+
+<script>
+function mostra(display){
+	document.write(display);
+}
+
+function lancaFoguete(){
+	mostra("<p>^^^Lançamento autorizado^^^</p>");
+	troposfera("entra");
+}
+
+function troposfera(estagio){
+	if(estagio == "entra"){
+		mostra("<p>====ENTRANDO NA CAMADA TROPOSFERA [15]KM=======</p>");
+		estratosfera(estagio);
+		}else if(estagio == "saindo"){
+			mostra("<p>====v SAINDO DA CAMADA TROPOSFERA v=======</p>");
+			mostra("<p>___Aterrisagem perfeita!!!___</p>");
+			}
+}
+
+function estratosfera(estagio){
+	if(estagio == "entra"){
+		mostra("<p>====ENTRANDO NA CAMADA ESTRATOSFERA [50]KM=======</p>");
+		mesosfera(estagio);
+		}else if(estagio == "saindo"){
+			mostra("<p>====v SAINDO DA CAMADA ESTRATOSFERA v=======</p>");
+			troposfera("saindo");
+			}
+}
+
+function mesosfera(estagio){
+	if(estagio == "entra"){
+		mostra("<p>====ENTRANDO NA CAMADA MESOSFERA [80]KM=======</p>");
+		termosfera(estagio);
+		}else if(estagio == "saindo"){
+			mostra("<p>====v SAINDO DA CAMADA MESOSFERA v=======</p>");
+			estratosfera("saindo");
+			}
+}
+
+function termosfera(estagio){
+	if(estagio == "entra"){
+		mostra("<p>====ENTRANDO NA CAMADA TERMOSFERA [500]KM=======</p>");
+		exosfera(estagio);
+		}else if(estagio == "saindo"){
+			mostra("<p>====v SAINDO DA CAMADA TERMOSFERA v=======</p>");
+			mesosfera("saindo");
+			}
+}
+
+function exosfera(estagio){
+	if(estagio == "entra"){
+		mostra("<p>====ENTRANDO NA CAMADA EXOSFERA [500]KM=======</p>");
+		mostra("<p>**********SATELITES*****TELESCOPIOS**********</p>");
+		mostra("<p>====v SAINDO DA CAMADA EXOSFERA v=======</p>");
+		termosfera("saindo");
+		}
+}
+
+lancaFoguete();
+
+</script>
+</body>
+</html>
