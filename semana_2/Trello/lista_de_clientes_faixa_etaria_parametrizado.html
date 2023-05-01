@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<meta charset = "UTF-8">
+<html>
+<head>
+<title> >>COMEX<< </title>
+</head>
+
+<body>
+
+<script>
+var somaIdades = 0;
+var totalClientes = 0;
+var anoAtual = 0;
+var registros = 0;
+var ultimoRegistro = 0;
+var continuar = true;
+
+function mostra(display){
+	document.write(display);
+}
+
+function mostraCabecalho(){
+	mostra("<h1> >>COMEX<< </h1>");
+	mostra("<b> .::Lista de Clientes::. </b>");
+	mostra("<hr> </hr>");
+}
+
+function mostraCliente(codigo, nome, mesNascimento, anoNascimento){
+	var faixaEtaria = anoAtual - anoNascimento;
+	mostra("<b> - Código: " + codigo + "</b>");
+	mostra("<p> Nome: " + nome + "</p>");
+	mostra("<p>	Mês de Nascimento: " + mesNascimento + "</p>");
+	mostra("<p>	Ano de Nascimento: " + anoNascimento + "</p>");
+	if(faixaEtaria <= 17){
+		mostra("<p> Classificação Etária: ADOLESCENTE</p>");
+		} else if(faixaEtaria >= 18 && faixaEtaria <=29){
+			mostra("<p> Classificação Etária: JOVEM</p>");
+		} else if(faixaEtaria >= 30 && faixaEtaria <=59){
+			mostra("<p> Classificação Etária: ADULTO</p>");
+		} else if(faixaEtaria >= 60){
+		mostra("<p> Classificação Etária: IDOSO</p>");
+	}
+	mostra("<hr></hr>");
+	somaIdades += (anoAtual - anoNascimento);
+	totalClientes++;	
+}
+
+function mostraRodape(){
+	mostra("<hr> </hr>");
+	mostra("<b> .::Alura LEVEL UP::. </b>");
+}
+
+mostraCabecalho();
+
+anoAtual = parseInt(prompt("Digite o ano atual, formato 20XX exemplo 2012"));
+while(isNaN(anoAtual)){
+	anoAtual = parseInt(prompt("Digite o ano atual, formato 20XX exemplo 2012"));
+}
+
+while(continuar == true){
+	registros = parseInt(prompt("Digite a quantidade de registros"));
+	while(isNaN(registros)){
+		registros = parseInt(prompt("Digite a quantidade de registros"));
+	}
+	for(contador = registros; contador > 0; contador--){
+		var nome = prompt("Digite o nome");
+		var mes = prompt("Digite o mes de nascimento");
+		var ano = parseInt(prompt("Digite o ano de nascimento"));
+		ultimoRegistro++;
+		registros--;	
+		mostraCliente(ultimoRegistro, nome, mes, ano);
+	}
+	continuar = confirm("Ha mais registros para adicionar?");
+	console.log(continuar);
+}
+
+mostra("<p>***Estatisticas***</p>");
+mostra("<p> Soma das Idades: " + somaIdades + "</p>");
+mostra("<p> Media das Idades: " + Math.round(somaIdades/totalClientes) + "</p>");
+
+mostraRodape();
+
+</script>
+</body>
+</html>

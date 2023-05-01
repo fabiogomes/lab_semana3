@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<meta charset = "UTF-8">
+<html>
+<head>
+<title> >>COMEX<< </title>
+</head>
+
+<body>
+
+<script>
+var lista = [];
+
+function mostra(display){
+	document.write(display);
+}
+
+function mostraCabecalho(){
+	mostra("<h1> >>COMEX<< </h1>");
+	mostra("<b> ::Cadastro de Categorias </b>");
+	mostra("<hr> </hr>");
+}
+
+function mostraLista(){
+	var meuSpan = document.getElementById("testeSpan");
+	var listaHeader = "<br><b> ::Lista de Categorias </b>";
+	listaHeader += "<hr> </hr>";	
+	for(indice = 0; indice < lista.length; indice++){
+		listaHeader += "<b> - Código: " + indice + "</b>";
+		listaHeader += "<p> Nome: " + lista[indice] + "</p>";
+	}
+	listaHeader += "<hr> </hr>";
+	listaHeader += "<b> .::Alura LEVEL UP::. </b>";
+	document.getElementById("testeSpan").innerHTML = listaHeader;
+}
+
+function mostraRodape(){
+	mostra("<hr> </hr>");
+	mostra("<b> .::Alura LEVEL UP::. </b>");
+}
+
+mostraCabecalho();
+document.write("Nome: <input></input><br>");
+var input = document.querySelector("input");
+input.focus();
+document.write("<button>Criar</button><br>");
+var button = document.querySelector("button");
+button.onclick = function(){					
+					lista.push(input.value);
+					input.value = "";
+					mostraLista();						
+					}
+document.write("<span id=testeSpan>");
+mostraRodape();
+
+</script>
+</body>
+</html>
