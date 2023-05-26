@@ -1,0 +1,8 @@
+
+public class ClienteOuro extends Cliente{
+	public double showNivel() {
+		// TODO Auto-generated method stub
+		System.out.println("Cliente Ouro");
+		return pontos;
+	}
+}
