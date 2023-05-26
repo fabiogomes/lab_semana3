@@ -1,0 +1,10 @@
+
+public class TesteCompra {
+	public static void main(String[] args) {
+		Cliente teste = new Cliente();
+		Compra cp = new Compra(teste, 50);
+		System.out.println(teste.pontos);
+		System.out.println(cp.);
+	}
+
+}
