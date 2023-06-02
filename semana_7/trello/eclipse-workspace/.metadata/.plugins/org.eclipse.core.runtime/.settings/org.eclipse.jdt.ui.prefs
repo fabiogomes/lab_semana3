@@ -1,0 +1,8 @@
+content_assist_lru_history=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><history maxLHS\="100" maxRHS\="10"><lhs name\="Cliente"><rhs name\="Cliente"/><rhs name\="ClienteBronze"/><rhs name\="ClienteOuro"/></lhs><lhs name\="ClienteBronze"><rhs name\="ClienteBronze"/></lhs><lhs name\="ClienteOuro"><rhs name\="ClienteOuro"/></lhs><lhs name\="ControladorPontuacao"><rhs name\="ControladorPontuacao"/></lhs><lhs name\="IPVA"><rhs name\="IPVAAutomovel"/></lhs><lhs name\="IPVAAutomovel"><rhs name\="IPVAAutomovel"/></lhs><lhs name\="ControladorDeIPVA"><rhs name\="ControladorDeIPVA"/></lhs><lhs name\="Documento"><rhs name\="DocumentoPDF"/></lhs><lhs name\="DocumentoPDF"><rhs name\="DocumentoPDF"/></lhs></history>
+content_assist_number_of_computers=12
+eclipse.preferences.version=1
+org.eclipse.jdt.ui.formatterprofiles.version=23
+spelling_locale_initialized=true
+typefilter_migrated_2=true
+useAnnotationsPrefPage=true
+useQuickDiffPrefPage=true

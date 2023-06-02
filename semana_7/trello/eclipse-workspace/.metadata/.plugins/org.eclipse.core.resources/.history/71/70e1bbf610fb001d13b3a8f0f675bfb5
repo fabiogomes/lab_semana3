@@ -1,0 +1,13 @@
+
+public class ControladorDeIPVA {
+	private double totalPagoIPVA = 0;
+
+	public double getTotalPagoIPVA() {
+		return totalPagoIPVA;
+	}
+
+	public void registra(IPVA totalPagoIPVA) {
+		this.totalPagoIPVA += totalPagoIPVA;
+	}	
+	
+}
