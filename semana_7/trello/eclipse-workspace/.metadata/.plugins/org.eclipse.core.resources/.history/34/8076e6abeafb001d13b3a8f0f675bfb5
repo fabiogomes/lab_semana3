@@ -1,0 +1,9 @@
+
+public class TesteImpressora {
+	public static void main(String[] args) {
+		Impressora hp = new Impressora();
+		DocumentoHTML html = new DocumentoHTML();
+		hp.imprimir(html, “olá mundo!!!“);
+	
+	}
+}

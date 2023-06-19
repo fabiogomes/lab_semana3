@@ -1,0 +1,29 @@
+
+public class Compra {
+	private Cliente cliente;
+	private double totalCompras;
+	
+	public double getTotalCompras() {
+		return totalCompras;
+	}
+
+	public void setTotalCompras(double totalCompras) {
+		this.totalCompras = totalCompras;
+	}
+
+	public Compra(Cliente cliente, double totalCompras) {
+		this.cliente = cliente;
+		this.totalCompras = totalCompras;
+	}
+	
+	public void registraCompra() {
+		if((this.totalCompras >= 25) & (this.totalCompras <= 50)) {
+			this.cliente.pontos += 5;
+		}else if((this.totalCompras >= 50.1) & (this.totalCompras <= 100.9)) {
+			this.cliente.pontos += 10;
+		}else if(this.totalCompras >= 101){
+			this.cliente.pontos += 15;
+		}
+			
+	}
+}
