@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="Cliente"/>
+    <fullyQualifiedTypeName name="ClienteBronze"/>
+    <fullyQualifiedTypeName name="ClienteOuro"/>
+    <fullyQualifiedTypeName name="ControladorPontuacao"/>
+    <fullyQualifiedTypeName name="IPVAAutomovel"/>
+    <fullyQualifiedTypeName name="IPVAMoto"/>
+    <fullyQualifiedTypeName name="ControladorDeIPVA"/>
+    <fullyQualifiedTypeName name="DocumentoPDF"/>
+</qualifiedTypeNameHistroy>
