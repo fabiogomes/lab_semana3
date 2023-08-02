@@ -1,0 +1,2380 @@
+!SESSION 2023-05-02 11:21:32.015 -----------------------------------------------
+eclipse.buildId=4.27.0.20230309-1200
+java.version=17.0.6
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=pt_BR
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY ch.qos.logback.classic 1 0 2023-05-02 11:21:37.577
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2023-05-02 11:21:49.957
+!MESSAGE Logback config file: /home/david-cruz/eclipse-workspace/.metadata/.plugins/org.eclipse.m2e.logback/logback.2.1.100.20230106-1511.xml
+
+!ENTRY org.eclipse.jface 2 0 2023-05-02 11:21:51.892
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2023-05-02 11:21:51.892
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.jdt.ui.navigate.open.type"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.lsp4e.symbolinworkspace"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2023-05-02 11:21:51.892
+!MESSAGE A conflict occurred for ALT+SHIFT+R:
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.rename.element,Rename - Refactoring ,
+		Rename the selected element,
+		Category(org.eclipse.jdt.ui.category.refactoring,Refactor - Java,Java Refactoring Actions,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.jdt.ui.edit.text.java.rename.element"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.rename,Rename,
+		Rename the selected item,
+		Category(org.eclipse.ui.category.file,File,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.ui.edit.rename"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.oomph.setup.editor 2 0 2023-05-02 11:22:03.756
+!MESSAGE Could not open a web browser because there are none configured. Check the Web Browser preferences.
+!STACK 1
+org.eclipse.ui.PartInitException: Could not open a web browser because there are none configured. Check the Web Browser preferences.
+	at org.eclipse.ui.internal.browser.DefaultBrowserSupport.createBrowser(DefaultBrowserSupport.java:104)
+	at org.eclipse.ui.internal.browser.WorkbenchBrowserSupport.createBrowser(WorkbenchBrowserSupport.java:92)
+	at org.eclipse.oomph.setup.presentation.handlers.DonateHandler.execute(DonateHandler.java:66)
+	at org.eclipse.ui.internal.handlers.HandlerProxy.execute(HandlerProxy.java:283)
+	at org.eclipse.ui.internal.handlers.E4HandlerProxy.execute(E4HandlerProxy.java:97)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invokeUsingClass(InjectorImpl.java:317)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invoke(InjectorImpl.java:251)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.invoke(ContextInjectionFactory.java:173)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceHandler.execute(HandlerServiceHandler.java:156)
+	at org.eclipse.core.commands.Command.executeWithChecks(Command.java:488)
+	at org.eclipse.oomph.setup.ui.SetupUIPlugin$2.run(SetupUIPlugin.java:371)
+	at org.eclipse.oomph.ui.UIUtil$5.run(UIUtil.java:571)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:132)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:5040)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:4520)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:643)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:550)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:171)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1440)
+!SUBENTRY 1 org.eclipse.ui 4 0 2023-05-02 11:22:03.757
+!MESSAGE Could not open a web browser because there are none configured. Check the Web Browser preferences.
+!SESSION 2023-05-02 11:22:58.221 -----------------------------------------------
+eclipse.buildId=4.27.0.20230309-1200
+java.version=17.0.6
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=pt_BR
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY ch.qos.logback.classic 1 0 2023-05-02 11:22:59.699
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2023-05-02 11:23:06.018
+!MESSAGE Logback config file: /home/david-cruz/eclipse-workspace/.metadata/.plugins/org.eclipse.m2e.logback/logback.2.1.100.20230106-1511.xml
+
+!ENTRY org.eclipse.jface 2 0 2023-05-02 11:23:08.608
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2023-05-02 11:23:08.609
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.jdt.ui.navigate.open.type"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.lsp4e.symbolinworkspace"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2023-05-02 11:23:08.609
+!MESSAGE A conflict occurred for ALT+SHIFT+R:
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.rename.element,Rename - Refactoring ,
+		Rename the selected element,
+		Category(org.eclipse.jdt.ui.category.refactoring,Refactor - Java,Java Refactoring Actions,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.jdt.ui.edit.text.java.rename.element"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.rename,Rename,
+		Rename the selected item,
+		Category(org.eclipse.ui.category.file,File,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.ui.edit.rename"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.core.resources 4 1 2023-05-02 12:35:01.676
+!MESSAGE Internal Error
+!STACK 1
+org.eclipse.core.runtime.CoreException: Could not read file: /home/david-cruz/Alura/semana_4/sintaxe-variaveis-e-fluxo/.project.
+	at org.eclipse.core.internal.filesystem.Policy.error(Policy.java:48)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.openInputStream(LocalFile.java:429)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:849)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:277)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.descriptionChanged(FileSystemResourceManager.java:382)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.internalWrite(FileSystemResourceManager.java:652)
+	at org.eclipse.core.internal.resources.Project.writeDescription(Project.java:1421)
+	at org.eclipse.core.internal.resources.Project.setDescription(Project.java:1313)
+	at org.eclipse.core.internal.resources.Project.setDescription(Project.java:1336)
+	at org.eclipse.jdt.internal.core.JavaProject.setJavaCommand(JavaProject.java:3519)
+	at org.eclipse.jdt.internal.core.JavaProject.addToBuildSpec(JavaProject.java:526)
+	at org.eclipse.jdt.internal.core.JavaProject.configure(JavaProject.java:1131)
+	at org.eclipse.core.internal.resources.NatureManager$1.run(NatureManager.java:150)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.resources.NatureManager.configureNature(NatureManager.java:166)
+	at org.eclipse.core.internal.resources.NatureManager.configureNatures(NatureManager.java:212)
+	at org.eclipse.core.internal.resources.Project.basicSetDescription(Project.java:111)
+	at org.eclipse.core.internal.resources.Project.setDescription(Project.java:1309)
+	at org.eclipse.core.internal.resources.Project.setDescription(Project.java:1336)
+	at org.eclipse.jdt.internal.ui.wizards.buildpaths.BuildPathsBlock.addJavaNature(BuildPathsBlock.java:745)
+	at org.eclipse.jdt.ui.wizards.JavaCapabilityConfigurationPage.configureJavaProject(JavaCapabilityConfigurationPage.java:282)
+	at org.eclipse.jdt.ui.wizards.JavaCapabilityConfigurationPage.configureJavaProject(JavaCapabilityConfigurationPage.java:259)
+	at org.eclipse.jdt.ui.wizards.NewJavaProjectWizardPageTwo.updateProject(NewJavaProjectWizardPageTwo.java:255)
+	at org.eclipse.jdt.ui.wizards.NewJavaProjectWizardPageTwo$1UpdateRunnable.run(NewJavaProjectWizardPageTwo.java:163)
+	at org.eclipse.ui.actions.WorkspaceModifyDelegatingOperation.execute(WorkspaceModifyDelegatingOperation.java:71)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.lambda$0(WorkspaceModifyOperation.java:110)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2380)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2405)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:131)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+Caused by: java.io.FileNotFoundException: /home/david-cruz/Alura/semana_4/sintaxe-variaveis-e-fluxo/.project (Permissão negada)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:216)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.openInputStream(LocalFile.java:418)
+	... 28 more
+!SUBENTRY 1 org.eclipse.core.filesystem 4 271 2023-05-02 12:35:01.676
+!MESSAGE Could not read file: /home/david-cruz/Alura/semana_4/sintaxe-variaveis-e-fluxo/.project.
+!STACK 0
+java.io.FileNotFoundException: /home/david-cruz/Alura/semana_4/sintaxe-variaveis-e-fluxo/.project (Permissão negada)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:216)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.openInputStream(LocalFile.java:418)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:849)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:277)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.descriptionChanged(FileSystemResourceManager.java:382)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.internalWrite(FileSystemResourceManager.java:652)
+	at org.eclipse.core.internal.resources.Project.writeDescription(Project.java:1421)
+	at org.eclipse.core.internal.resources.Project.setDescription(Project.java:1313)
+	at org.eclipse.core.internal.resources.Project.setDescription(Project.java:1336)
+	at org.eclipse.jdt.internal.core.JavaProject.setJavaCommand(JavaProject.java:3519)
+	at org.eclipse.jdt.internal.core.JavaProject.addToBuildSpec(JavaProject.java:526)
+	at org.eclipse.jdt.internal.core.JavaProject.configure(JavaProject.java:1131)
+	at org.eclipse.core.internal.resources.NatureManager$1.run(NatureManager.java:150)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.resources.NatureManager.configureNature(NatureManager.java:166)
+	at org.eclipse.core.internal.resources.NatureManager.configureNatures(NatureManager.java:212)
+	at org.eclipse.core.internal.resources.Project.basicSetDescription(Project.java:111)
+	at org.eclipse.core.internal.resources.Project.setDescription(Project.java:1309)
+	at org.eclipse.core.internal.resources.Project.setDescription(Project.java:1336)
+	at org.eclipse.jdt.internal.ui.wizards.buildpaths.BuildPathsBlock.addJavaNature(BuildPathsBlock.java:745)
+	at org.eclipse.jdt.ui.wizards.JavaCapabilityConfigurationPage.configureJavaProject(JavaCapabilityConfigurationPage.java:282)
+	at org.eclipse.jdt.ui.wizards.JavaCapabilityConfigurationPage.configureJavaProject(JavaCapabilityConfigurationPage.java:259)
+	at org.eclipse.jdt.ui.wizards.NewJavaProjectWizardPageTwo.updateProject(NewJavaProjectWizardPageTwo.java:255)
+	at org.eclipse.jdt.ui.wizards.NewJavaProjectWizardPageTwo$1UpdateRunnable.run(NewJavaProjectWizardPageTwo.java:163)
+	at org.eclipse.ui.actions.WorkspaceModifyDelegatingOperation.execute(WorkspaceModifyDelegatingOperation.java:71)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.lambda$0(WorkspaceModifyOperation.java:110)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2380)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2405)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:131)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+
+!ENTRY org.eclipse.core.resources 4 2 2023-05-02 12:35:01.687
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
+!STACK 1
+org.eclipse.core.runtime.CoreException: Could not write file: /home/david-cruz/Alura/semana_4/sintaxe-variaveis-e-fluxo/.project.
+	at org.eclipse.core.internal.filesystem.Policy.error(Policy.java:48)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.openOutputStream(LocalFile.java:448)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.write(FileSystemResourceManager.java:1175)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.internalWrite(FileSystemResourceManager.java:668)
+	at org.eclipse.core.internal.resources.Project.writeDescription(Project.java:1421)
+	at org.eclipse.core.internal.resources.Project.setDescription(Project.java:1313)
+	at org.eclipse.core.internal.resources.Project.setDescription(Project.java:1336)
+	at org.eclipse.jdt.internal.core.JavaProject.setJavaCommand(JavaProject.java:3519)
+	at org.eclipse.jdt.internal.core.JavaProject.addToBuildSpec(JavaProject.java:526)
+	at org.eclipse.jdt.internal.core.JavaProject.configure(JavaProject.java:1131)
+	at org.eclipse.core.internal.resources.NatureManager$1.run(NatureManager.java:150)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.resources.NatureManager.configureNature(NatureManager.java:166)
+	at org.eclipse.core.internal.resources.NatureManager.configureNatures(NatureManager.java:212)
+	at org.eclipse.core.internal.resources.Project.basicSetDescription(Project.java:111)
+	at org.eclipse.core.internal.resources.Project.setDescription(Project.java:1309)
+	at org.eclipse.core.internal.resources.Project.setDescription(Project.java:1336)
+	at org.eclipse.jdt.internal.ui.wizards.buildpaths.BuildPathsBlock.addJavaNature(BuildPathsBlock.java:745)
+	at org.eclipse.jdt.ui.wizards.JavaCapabilityConfigurationPage.configureJavaProject(JavaCapabilityConfigurationPage.java:282)
+	at org.eclipse.jdt.ui.wizards.JavaCapabilityConfigurationPage.configureJavaProject(JavaCapabilityConfigurationPage.java:259)
+	at org.eclipse.jdt.ui.wizards.NewJavaProjectWizardPageTwo.updateProject(NewJavaProjectWizardPageTwo.java:255)
+	at org.eclipse.jdt.ui.wizards.NewJavaProjectWizardPageTwo$1UpdateRunnable.run(NewJavaProjectWizardPageTwo.java:163)
+	at org.eclipse.ui.actions.WorkspaceModifyDelegatingOperation.execute(WorkspaceModifyDelegatingOperation.java:71)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.lambda$0(WorkspaceModifyOperation.java:110)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2380)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2405)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:131)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+Caused by: java.io.FileNotFoundException: /home/david-cruz/Alura/semana_4/sintaxe-variaveis-e-fluxo/.project (Permissão negada)
+	at java.base/java.io.FileOutputStream.open0(Native Method)
+	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:293)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:235)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.openOutputStream(LocalFile.java:438)
+	... 26 more
+!SUBENTRY 1 org.eclipse.core.filesystem 4 272 2023-05-02 12:35:01.687
+!MESSAGE Could not write file: /home/david-cruz/Alura/semana_4/sintaxe-variaveis-e-fluxo/.project.
+!STACK 0
+java.io.FileNotFoundException: /home/david-cruz/Alura/semana_4/sintaxe-variaveis-e-fluxo/.project (Permissão negada)
+	at java.base/java.io.FileOutputStream.open0(Native Method)
+	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:293)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:235)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.openOutputStream(LocalFile.java:438)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.write(FileSystemResourceManager.java:1175)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.internalWrite(FileSystemResourceManager.java:668)
+	at org.eclipse.core.internal.resources.Project.writeDescription(Project.java:1421)
+	at org.eclipse.core.internal.resources.Project.setDescription(Project.java:1313)
+	at org.eclipse.core.internal.resources.Project.setDescription(Project.java:1336)
+	at org.eclipse.jdt.internal.core.JavaProject.setJavaCommand(JavaProject.java:3519)
+	at org.eclipse.jdt.internal.core.JavaProject.addToBuildSpec(JavaProject.java:526)
+	at org.eclipse.jdt.internal.core.JavaProject.configure(JavaProject.java:1131)
+	at org.eclipse.core.internal.resources.NatureManager$1.run(NatureManager.java:150)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.resources.NatureManager.configureNature(NatureManager.java:166)
+	at org.eclipse.core.internal.resources.NatureManager.configureNatures(NatureManager.java:212)
+	at org.eclipse.core.internal.resources.Project.basicSetDescription(Project.java:111)
+	at org.eclipse.core.internal.resources.Project.setDescription(Project.java:1309)
+	at org.eclipse.core.internal.resources.Project.setDescription(Project.java:1336)
+	at org.eclipse.jdt.internal.ui.wizards.buildpaths.BuildPathsBlock.addJavaNature(BuildPathsBlock.java:745)
+	at org.eclipse.jdt.ui.wizards.JavaCapabilityConfigurationPage.configureJavaProject(JavaCapabilityConfigurationPage.java:282)
+	at org.eclipse.jdt.ui.wizards.JavaCapabilityConfigurationPage.configureJavaProject(JavaCapabilityConfigurationPage.java:259)
+	at org.eclipse.jdt.ui.wizards.NewJavaProjectWizardPageTwo.updateProject(NewJavaProjectWizardPageTwo.java:255)
+	at org.eclipse.jdt.ui.wizards.NewJavaProjectWizardPageTwo$1UpdateRunnable.run(NewJavaProjectWizardPageTwo.java:163)
+	at org.eclipse.ui.actions.WorkspaceModifyDelegatingOperation.execute(WorkspaceModifyDelegatingOperation.java:71)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.lambda$0(WorkspaceModifyOperation.java:110)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2380)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2405)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:131)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+!SUBENTRY 1 org.eclipse.core.filesystem 4 272 2023-05-02 12:35:01.687
+!MESSAGE Could not write file: /home/david-cruz/Alura/semana_4/sintaxe-variaveis-e-fluxo/.project.
+!STACK 0
+java.io.FileNotFoundException: /home/david-cruz/Alura/semana_4/sintaxe-variaveis-e-fluxo/.project (Permissão negada)
+	at java.base/java.io.FileOutputStream.open0(Native Method)
+	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:293)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:235)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.openOutputStream(LocalFile.java:438)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.write(FileSystemResourceManager.java:1175)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.internalWrite(FileSystemResourceManager.java:668)
+	at org.eclipse.core.internal.resources.Project.writeDescription(Project.java:1421)
+	at org.eclipse.core.internal.resources.Project.setDescription(Project.java:1313)
+	at org.eclipse.core.internal.resources.Project.setDescription(Project.java:1336)
+	at org.eclipse.jdt.internal.core.JavaProject.setJavaCommand(JavaProject.java:3519)
+	at org.eclipse.jdt.internal.core.JavaProject.addToBuildSpec(JavaProject.java:526)
+	at org.eclipse.jdt.internal.core.JavaProject.configure(JavaProject.java:1131)
+	at org.eclipse.core.internal.resources.NatureManager$1.run(NatureManager.java:150)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.resources.NatureManager.configureNature(NatureManager.java:166)
+	at org.eclipse.core.internal.resources.NatureManager.configureNatures(NatureManager.java:212)
+	at org.eclipse.core.internal.resources.Project.basicSetDescription(Project.java:111)
+	at org.eclipse.core.internal.resources.Project.setDescription(Project.java:1309)
+	at org.eclipse.core.internal.resources.Project.setDescription(Project.java:1336)
+	at org.eclipse.jdt.internal.ui.wizards.buildpaths.BuildPathsBlock.addJavaNature(BuildPathsBlock.java:745)
+	at org.eclipse.jdt.ui.wizards.JavaCapabilityConfigurationPage.configureJavaProject(JavaCapabilityConfigurationPage.java:282)
+	at org.eclipse.jdt.ui.wizards.JavaCapabilityConfigurationPage.configureJavaProject(JavaCapabilityConfigurationPage.java:259)
+	at org.eclipse.jdt.ui.wizards.NewJavaProjectWizardPageTwo.updateProject(NewJavaProjectWizardPageTwo.java:255)
+	at org.eclipse.jdt.ui.wizards.NewJavaProjectWizardPageTwo$1UpdateRunnable.run(NewJavaProjectWizardPageTwo.java:163)
+	at org.eclipse.ui.actions.WorkspaceModifyDelegatingOperation.execute(WorkspaceModifyDelegatingOperation.java:71)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.lambda$0(WorkspaceModifyOperation.java:110)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2380)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2405)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:131)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-05-02 12:35:01.759
+!MESSAGE <module:java.base> is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-05-02 12:35:01.760
+!MESSAGE <module:java.desktop> is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-05-02 12:35:01.760
+!MESSAGE <module:java.management> is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-05-02 12:35:01.760
+!MESSAGE <module:java.management.rmi> is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-05-02 12:35:01.761
+!MESSAGE <module:java.naming> is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-05-02 12:35:01.761
+!MESSAGE <module:java.scripting> is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-05-02 12:35:01.761
+!MESSAGE <module:java.security.sasl> is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-05-02 12:35:01.761
+!MESSAGE <module:java.sql.rowset> is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-05-02 12:35:01.762
+!MESSAGE <module:java.xml> is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-05-02 12:35:01.762
+!MESSAGE <module:java.xml.crypto> is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-05-02 12:35:01.762
+!MESSAGE <module:jdk.accessibility> is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-05-02 12:35:01.762
+!MESSAGE <module:jdk.attach> is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-05-02 12:35:01.763
+!MESSAGE <module:jdk.compiler> is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-05-02 12:35:01.763
+!MESSAGE <module:jdk.hotspot.agent> is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-05-02 12:35:01.763
+!MESSAGE <module:jdk.httpserver> is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-05-02 12:35:01.764
+!MESSAGE <module:jdk.jartool> is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-05-02 12:35:01.764
+!MESSAGE <module:jdk.jconsole> is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-05-02 12:35:01.764
+!MESSAGE <module:jdk.jdeps> is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-05-02 12:35:01.765
+!MESSAGE <module:jdk.jdi> is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-05-02 12:35:01.765
+!MESSAGE <module:jdk.management> is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-05-02 12:35:01.765
+!MESSAGE <module:jdk.naming.dns> is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-05-02 12:35:01.766
+!MESSAGE <module:jdk.naming.rmi> is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-05-02 12:35:01.767
+!MESSAGE <module:jdk.sctp> is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-05-02 12:35:01.767
+!MESSAGE <module:jdk.security.auth> is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-05-02 12:35:01.768
+!MESSAGE <module:jdk.security.jgss> is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-05-02 12:35:01.768
+!MESSAGE <module:jdk.unsupported> is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-05-02 12:35:01.768
+!MESSAGE <module:java.datatransfer> is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-05-02 12:35:01.769
+!MESSAGE <module:java.instrument> is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-05-02 12:35:01.769
+!MESSAGE <module:java.logging> is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-05-02 12:35:01.770
+!MESSAGE <module:java.net.http> is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-05-02 12:35:01.770
+!MESSAGE <module:java.prefs> is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-05-02 12:35:01.770
+!MESSAGE <module:java.rmi> is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-05-02 12:35:01.770
+!MESSAGE <module:java.sql> is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-05-02 12:35:01.770
+!MESSAGE <module:java.compiler> is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-05-02 12:35:01.771
+!MESSAGE <module:java.security.jgss> is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-05-02 12:35:01.771
+!MESSAGE <module:java.smartcardio> is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-05-02 12:35:01.772
+!MESSAGE <module:java.transaction.xa> is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-05-02 12:35:01.772
+!MESSAGE <module:jdk.dynalink> is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-05-02 12:35:01.774
+!MESSAGE <module:jdk.editpad> is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-05-02 12:35:01.774
+!MESSAGE <module:jdk.internal.ed> is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-05-02 12:35:01.774
+!MESSAGE <module:jdk.internal.le> is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-05-02 12:35:01.777
+!MESSAGE <module:jdk.internal.opt> is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-05-02 12:35:01.777
+!MESSAGE <module:jdk.internal.vm.ci> is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-05-02 12:35:01.777
+!MESSAGE <module:jdk.javadoc> is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-05-02 12:35:01.778
+!MESSAGE <module:jdk.jfr> is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-05-02 12:35:01.778
+!MESSAGE <module:jdk.jlink> is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-05-02 12:35:01.778
+!MESSAGE <module:jdk.jpackage> is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-05-02 12:35:01.778
+!MESSAGE <module:jdk.jshell> is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-05-02 12:35:01.778
+!MESSAGE <module:jdk.management.agent> is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-05-02 12:35:01.779
+!MESSAGE <module:jdk.management.jfr> is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-05-02 12:35:01.779
+!MESSAGE <module:jdk.net> is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-05-02 12:35:01.779
+!MESSAGE <module:jdk.nio.mapmode> is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-05-02 12:35:01.780
+!MESSAGE <module:jdk.random> is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-05-02 12:35:01.780
+!MESSAGE <module:jdk.unsupported.desktop> is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-05-02 12:35:01.780
+!MESSAGE <module:jdk.zipfs> is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-05-02 12:35:01.781
+!MESSAGE <module:jdk.jsobject> is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-05-02 12:35:01.781
+!MESSAGE <module:jdk.xml.dom> is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-05-02 12:35:01.781
+!MESSAGE <module:jdk.charsets> is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-05-02 12:35:01.781
+!MESSAGE <module:jdk.crypto.cryptoki> is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-05-02 12:35:01.782
+!MESSAGE <module:jdk.crypto.ec> is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-05-02 12:35:01.782
+!MESSAGE <module:jdk.internal.jvmstat> is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-05-02 12:35:01.782
+!MESSAGE <module:jdk.jcmd> is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-05-02 12:35:01.782
+!MESSAGE <module:jdk.jstatd> is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-05-02 12:35:01.783
+!MESSAGE <module:jdk.localedata> is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-05-02 12:35:01.783
+!MESSAGE <module:java.se> is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-05-02 12:35:01.783
+!MESSAGE <module:jdk.internal.vm.compiler> is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-05-02 12:35:01.783
+!MESSAGE <module:jdk.internal.vm.compiler.management> is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-05-02 12:35:01.784
+!MESSAGE <module:jdk.jdwp.agent> is not on its project's build path
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2023-05-02 12:35:01.795
+!MESSAGE Internal Error
+!STACK 1
+org.eclipse.core.runtime.CoreException: Problems encountered while setting project description.
+	at org.eclipse.core.internal.resources.Project.setDescription(Project.java:1311)
+	at org.eclipse.core.internal.resources.Project.setDescription(Project.java:1336)
+	at org.eclipse.jdt.internal.ui.wizards.buildpaths.BuildPathsBlock.addJavaNature(BuildPathsBlock.java:745)
+	at org.eclipse.jdt.ui.wizards.JavaCapabilityConfigurationPage.configureJavaProject(JavaCapabilityConfigurationPage.java:282)
+	at org.eclipse.jdt.ui.wizards.JavaCapabilityConfigurationPage.configureJavaProject(JavaCapabilityConfigurationPage.java:259)
+	at org.eclipse.jdt.ui.wizards.NewJavaProjectWizardPageTwo.updateProject(NewJavaProjectWizardPageTwo.java:255)
+	at org.eclipse.jdt.ui.wizards.NewJavaProjectWizardPageTwo$1UpdateRunnable.run(NewJavaProjectWizardPageTwo.java:163)
+	at org.eclipse.ui.actions.WorkspaceModifyDelegatingOperation.execute(WorkspaceModifyDelegatingOperation.java:71)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.lambda$0(WorkspaceModifyOperation.java:110)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2380)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2405)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:131)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+Contains: Could not write file: /home/david-cruz/Alura/semana_4/sintaxe-variaveis-e-fluxo/.project.
+java.io.FileNotFoundException: /home/david-cruz/Alura/semana_4/sintaxe-variaveis-e-fluxo/.project (Permissão negada)
+	at java.base/java.io.FileOutputStream.open0(Native Method)
+	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:293)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:235)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.openOutputStream(LocalFile.java:438)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.write(FileSystemResourceManager.java:1175)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.internalWrite(FileSystemResourceManager.java:668)
+	at org.eclipse.core.internal.resources.Project.writeDescription(Project.java:1421)
+	at org.eclipse.core.internal.resources.Project.setDescription(Project.java:1313)
+	at org.eclipse.core.internal.resources.Project.setDescription(Project.java:1336)
+	at org.eclipse.jdt.internal.core.JavaProject.setJavaCommand(JavaProject.java:3519)
+	at org.eclipse.jdt.internal.core.JavaProject.addToBuildSpec(JavaProject.java:526)
+	at org.eclipse.jdt.internal.core.JavaProject.configure(JavaProject.java:1131)
+	at org.eclipse.core.internal.resources.NatureManager$1.run(NatureManager.java:150)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.resources.NatureManager.configureNature(NatureManager.java:166)
+	at org.eclipse.core.internal.resources.NatureManager.configureNatures(NatureManager.java:212)
+	at org.eclipse.core.internal.resources.Project.basicSetDescription(Project.java:111)
+	at org.eclipse.core.internal.resources.Project.setDescription(Project.java:1309)
+	at org.eclipse.core.internal.resources.Project.setDescription(Project.java:1336)
+	at org.eclipse.jdt.internal.ui.wizards.buildpaths.BuildPathsBlock.addJavaNature(BuildPathsBlock.java:745)
+	at org.eclipse.jdt.ui.wizards.JavaCapabilityConfigurationPage.configureJavaProject(JavaCapabilityConfigurationPage.java:282)
+	at org.eclipse.jdt.ui.wizards.JavaCapabilityConfigurationPage.configureJavaProject(JavaCapabilityConfigurationPage.java:259)
+	at org.eclipse.jdt.ui.wizards.NewJavaProjectWizardPageTwo.updateProject(NewJavaProjectWizardPageTwo.java:255)
+	at org.eclipse.jdt.ui.wizards.NewJavaProjectWizardPageTwo$1UpdateRunnable.run(NewJavaProjectWizardPageTwo.java:163)
+	at org.eclipse.ui.actions.WorkspaceModifyDelegatingOperation.execute(WorkspaceModifyDelegatingOperation.java:71)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.lambda$0(WorkspaceModifyOperation.java:110)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2380)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2405)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:131)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+!SUBENTRY 1 org.eclipse.core.resources 4 568 2023-05-02 12:35:01.795
+!MESSAGE Problems encountered while setting project description.
+!SUBENTRY 2 org.eclipse.core.filesystem 4 272 2023-05-02 12:35:01.795
+!MESSAGE Could not write file: /home/david-cruz/Alura/semana_4/sintaxe-variaveis-e-fluxo/.project.
+!STACK 0
+java.io.FileNotFoundException: /home/david-cruz/Alura/semana_4/sintaxe-variaveis-e-fluxo/.project (Permissão negada)
+	at java.base/java.io.FileOutputStream.open0(Native Method)
+	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:293)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:235)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.openOutputStream(LocalFile.java:438)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.write(FileSystemResourceManager.java:1175)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.internalWrite(FileSystemResourceManager.java:668)
+	at org.eclipse.core.internal.resources.Project.writeDescription(Project.java:1421)
+	at org.eclipse.core.internal.resources.Project.setDescription(Project.java:1313)
+	at org.eclipse.core.internal.resources.Project.setDescription(Project.java:1336)
+	at org.eclipse.jdt.internal.core.JavaProject.setJavaCommand(JavaProject.java:3519)
+	at org.eclipse.jdt.internal.core.JavaProject.addToBuildSpec(JavaProject.java:526)
+	at org.eclipse.jdt.internal.core.JavaProject.configure(JavaProject.java:1131)
+	at org.eclipse.core.internal.resources.NatureManager$1.run(NatureManager.java:150)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.resources.NatureManager.configureNature(NatureManager.java:166)
+	at org.eclipse.core.internal.resources.NatureManager.configureNatures(NatureManager.java:212)
+	at org.eclipse.core.internal.resources.Project.basicSetDescription(Project.java:111)
+	at org.eclipse.core.internal.resources.Project.setDescription(Project.java:1309)
+	at org.eclipse.core.internal.resources.Project.setDescription(Project.java:1336)
+	at org.eclipse.jdt.internal.ui.wizards.buildpaths.BuildPathsBlock.addJavaNature(BuildPathsBlock.java:745)
+	at org.eclipse.jdt.ui.wizards.JavaCapabilityConfigurationPage.configureJavaProject(JavaCapabilityConfigurationPage.java:282)
+	at org.eclipse.jdt.ui.wizards.JavaCapabilityConfigurationPage.configureJavaProject(JavaCapabilityConfigurationPage.java:259)
+	at org.eclipse.jdt.ui.wizards.NewJavaProjectWizardPageTwo.updateProject(NewJavaProjectWizardPageTwo.java:255)
+	at org.eclipse.jdt.ui.wizards.NewJavaProjectWizardPageTwo$1UpdateRunnable.run(NewJavaProjectWizardPageTwo.java:163)
+	at org.eclipse.ui.actions.WorkspaceModifyDelegatingOperation.execute(WorkspaceModifyDelegatingOperation.java:71)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.lambda$0(WorkspaceModifyOperation.java:110)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2380)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2405)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:131)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2023-05-02 12:46:47.825
+!MESSAGE Internal Error
+!STACK 1
+org.eclipse.core.runtime.CoreException: Problems encountered while deleting files.
+	at org.eclipse.core.internal.filesystem.local.LocalFile.delete(LocalFile.java:141)
+	at org.eclipse.jdt.ui.wizards.NewJavaProjectWizardPageTwo.restoreExistingFiles(NewJavaProjectWizardPageTwo.java:406)
+	at org.eclipse.jdt.ui.wizards.NewJavaProjectWizardPageTwo.doRemoveProject(NewJavaProjectWizardPageTwo.java:528)
+	at org.eclipse.ui.actions.WorkspaceModifyDelegatingOperation.execute(WorkspaceModifyDelegatingOperation.java:71)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.lambda$0(WorkspaceModifyOperation.java:110)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2380)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2405)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:131)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+Contains: Could not delete: /home/david-cruz/Alura/semana_4/sintaxe-variaveis-e-fluxo/.project.
+java.nio.file.FileSystemException: /home/david-cruz/Alura/semana_4/sintaxe-variaveis-e-fluxo/.project: Valor muito grande para o tipo de dados definido
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:100)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:106)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.implDelete(UnixFileSystemProvider.java:248)
+	at java.base/sun.nio.fs.AbstractFileSystemProvider.deleteIfExists(AbstractFileSystemProvider.java:110)
+	at java.base/java.nio.file.Files.deleteIfExists(Files.java:1191)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.internalDelete(LocalFile.java:222)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.delete(LocalFile.java:139)
+	at org.eclipse.jdt.ui.wizards.NewJavaProjectWizardPageTwo.restoreExistingFiles(NewJavaProjectWizardPageTwo.java:406)
+	at org.eclipse.jdt.ui.wizards.NewJavaProjectWizardPageTwo.doRemoveProject(NewJavaProjectWizardPageTwo.java:528)
+	at org.eclipse.ui.actions.WorkspaceModifyDelegatingOperation.execute(WorkspaceModifyDelegatingOperation.java:71)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.lambda$0(WorkspaceModifyOperation.java:110)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2380)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2405)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:131)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+!SUBENTRY 1 org.eclipse.core.filesystem 4 273 2023-05-02 12:46:47.825
+!MESSAGE Problems encountered while deleting files.
+!SUBENTRY 2 org.eclipse.core.filesystem 4 273 2023-05-02 12:46:47.825
+!MESSAGE Could not delete: /home/david-cruz/Alura/semana_4/sintaxe-variaveis-e-fluxo/.project.
+!STACK 0
+java.nio.file.FileSystemException: /home/david-cruz/Alura/semana_4/sintaxe-variaveis-e-fluxo/.project: Valor muito grande para o tipo de dados definido
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:100)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:106)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.implDelete(UnixFileSystemProvider.java:248)
+	at java.base/sun.nio.fs.AbstractFileSystemProvider.deleteIfExists(AbstractFileSystemProvider.java:110)
+	at java.base/java.nio.file.Files.deleteIfExists(Files.java:1191)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.internalDelete(LocalFile.java:222)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.delete(LocalFile.java:139)
+	at org.eclipse.jdt.ui.wizards.NewJavaProjectWizardPageTwo.restoreExistingFiles(NewJavaProjectWizardPageTwo.java:406)
+	at org.eclipse.jdt.ui.wizards.NewJavaProjectWizardPageTwo.doRemoveProject(NewJavaProjectWizardPageTwo.java:528)
+	at org.eclipse.ui.actions.WorkspaceModifyDelegatingOperation.execute(WorkspaceModifyDelegatingOperation.java:71)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.lambda$0(WorkspaceModifyOperation.java:110)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2380)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2405)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:131)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2023-05-02 12:47:04.832
+!MESSAGE Internal Error
+!STACK 1
+org.eclipse.core.runtime.CoreException: Could not read file: /home/david-cruz/Alura/semana_4/sintaxe-variaveis-e-fluxo/.project.
+	at org.eclipse.core.internal.filesystem.Policy.error(Policy.java:48)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.openInputStream(LocalFile.java:429)
+	at org.eclipse.jdt.ui.wizards.NewJavaProjectWizardPageTwo.copyFile(NewJavaProjectWizardPageTwo.java:438)
+	at org.eclipse.jdt.ui.wizards.NewJavaProjectWizardPageTwo.createBackup(NewJavaProjectWizardPageTwo.java:429)
+	at org.eclipse.jdt.ui.wizards.NewJavaProjectWizardPageTwo.rememberExistingFiles(NewJavaProjectWizardPageTwo.java:392)
+	at org.eclipse.jdt.ui.wizards.NewJavaProjectWizardPageTwo.updateProject(NewJavaProjectWizardPageTwo.java:226)
+	at org.eclipse.jdt.ui.wizards.NewJavaProjectWizardPageTwo$1UpdateRunnable.run(NewJavaProjectWizardPageTwo.java:163)
+	at org.eclipse.ui.actions.WorkspaceModifyDelegatingOperation.execute(WorkspaceModifyDelegatingOperation.java:71)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.lambda$0(WorkspaceModifyOperation.java:110)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2380)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2405)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:131)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+Caused by: java.io.FileNotFoundException: /home/david-cruz/Alura/semana_4/sintaxe-variaveis-e-fluxo/.project (Permissão negada)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:216)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.openInputStream(LocalFile.java:418)
+	... 11 more
+!SUBENTRY 1 org.eclipse.core.filesystem 4 271 2023-05-02 12:47:04.832
+!MESSAGE Could not read file: /home/david-cruz/Alura/semana_4/sintaxe-variaveis-e-fluxo/.project.
+!STACK 0
+java.io.FileNotFoundException: /home/david-cruz/Alura/semana_4/sintaxe-variaveis-e-fluxo/.project (Permissão negada)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:216)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.openInputStream(LocalFile.java:418)
+	at org.eclipse.jdt.ui.wizards.NewJavaProjectWizardPageTwo.copyFile(NewJavaProjectWizardPageTwo.java:438)
+	at org.eclipse.jdt.ui.wizards.NewJavaProjectWizardPageTwo.createBackup(NewJavaProjectWizardPageTwo.java:429)
+	at org.eclipse.jdt.ui.wizards.NewJavaProjectWizardPageTwo.rememberExistingFiles(NewJavaProjectWizardPageTwo.java:392)
+	at org.eclipse.jdt.ui.wizards.NewJavaProjectWizardPageTwo.updateProject(NewJavaProjectWizardPageTwo.java:226)
+	at org.eclipse.jdt.ui.wizards.NewJavaProjectWizardPageTwo$1UpdateRunnable.run(NewJavaProjectWizardPageTwo.java:163)
+	at org.eclipse.ui.actions.WorkspaceModifyDelegatingOperation.execute(WorkspaceModifyDelegatingOperation.java:71)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.lambda$0(WorkspaceModifyOperation.java:110)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2380)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2405)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:131)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+!SESSION 2023-05-02 12:49:14.518 -----------------------------------------------
+eclipse.buildId=4.27.0.20230309-1200
+java.version=17.0.6
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=pt_BR
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY ch.qos.logback.classic 1 0 2023-05-02 12:49:16.291
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2023-05-02 12:49:27.890
+!MESSAGE Logback config file: /home/david-cruz/eclipse-workspace/.metadata/.plugins/org.eclipse.m2e.logback/logback.2.1.100.20230106-1511.xml
+
+!ENTRY org.eclipse.jface 2 0 2023-05-02 12:49:30.334
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2023-05-02 12:49:30.334
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.jdt.ui.navigate.open.type"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.lsp4e.symbolinworkspace"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2023-05-02 12:49:30.334
+!MESSAGE A conflict occurred for ALT+SHIFT+R:
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.rename.element,Rename - Refactoring ,
+		Rename the selected element,
+		Category(org.eclipse.jdt.ui.category.refactoring,Refactor - Java,Java Refactoring Actions,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.jdt.ui.edit.text.java.rename.element"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.rename,Rename,
+		Rename the selected item,
+		Category(org.eclipse.ui.category.file,File,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.ui.edit.rename"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.core.resources 4 1 2023-05-02 12:50:11.208
+!MESSAGE Internal Error
+!STACK 1
+org.eclipse.core.runtime.CoreException: Could not read file: /home/david-cruz/Alura/semana_4/sintaxe-variaveis-e-fluxo/.project.
+	at org.eclipse.core.internal.filesystem.Policy.error(Policy.java:48)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.openInputStream(LocalFile.java:429)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:849)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:277)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.descriptionChanged(FileSystemResourceManager.java:382)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.internalWrite(FileSystemResourceManager.java:652)
+	at org.eclipse.core.internal.resources.Project.writeDescription(Project.java:1421)
+	at org.eclipse.core.internal.resources.Project.setDescription(Project.java:1313)
+	at org.eclipse.core.internal.resources.Project.setDescription(Project.java:1336)
+	at org.eclipse.jdt.internal.core.JavaProject.setJavaCommand(JavaProject.java:3519)
+	at org.eclipse.jdt.internal.core.JavaProject.addToBuildSpec(JavaProject.java:526)
+	at org.eclipse.jdt.internal.core.JavaProject.configure(JavaProject.java:1131)
+	at org.eclipse.core.internal.resources.NatureManager$1.run(NatureManager.java:150)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.resources.NatureManager.configureNature(NatureManager.java:166)
+	at org.eclipse.core.internal.resources.NatureManager.configureNatures(NatureManager.java:212)
+	at org.eclipse.core.internal.resources.Project.basicSetDescription(Project.java:111)
+	at org.eclipse.core.internal.resources.Project.setDescription(Project.java:1309)
+	at org.eclipse.core.internal.resources.Project.setDescription(Project.java:1336)
+	at org.eclipse.jdt.internal.ui.wizards.buildpaths.BuildPathsBlock.addJavaNature(BuildPathsBlock.java:745)
+	at org.eclipse.jdt.ui.wizards.JavaCapabilityConfigurationPage.configureJavaProject(JavaCapabilityConfigurationPage.java:282)
+	at org.eclipse.jdt.ui.wizards.JavaCapabilityConfigurationPage.configureJavaProject(JavaCapabilityConfigurationPage.java:259)
+	at org.eclipse.jdt.ui.wizards.NewJavaProjectWizardPageTwo.updateProject(NewJavaProjectWizardPageTwo.java:255)
+	at org.eclipse.jdt.ui.wizards.NewJavaProjectWizardPageTwo$1UpdateRunnable.run(NewJavaProjectWizardPageTwo.java:163)
+	at org.eclipse.ui.actions.WorkspaceModifyDelegatingOperation.execute(WorkspaceModifyDelegatingOperation.java:71)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.lambda$0(WorkspaceModifyOperation.java:110)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2380)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2405)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:131)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+Caused by: java.io.FileNotFoundException: /home/david-cruz/Alura/semana_4/sintaxe-variaveis-e-fluxo/.project (Permissão negada)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:216)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.openInputStream(LocalFile.java:418)
+	... 28 more
+!SUBENTRY 1 org.eclipse.core.filesystem 4 271 2023-05-02 12:50:11.209
+!MESSAGE Could not read file: /home/david-cruz/Alura/semana_4/sintaxe-variaveis-e-fluxo/.project.
+!STACK 0
+java.io.FileNotFoundException: /home/david-cruz/Alura/semana_4/sintaxe-variaveis-e-fluxo/.project (Permissão negada)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:216)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.openInputStream(LocalFile.java:418)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:849)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:277)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.descriptionChanged(FileSystemResourceManager.java:382)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.internalWrite(FileSystemResourceManager.java:652)
+	at org.eclipse.core.internal.resources.Project.writeDescription(Project.java:1421)
+	at org.eclipse.core.internal.resources.Project.setDescription(Project.java:1313)
+	at org.eclipse.core.internal.resources.Project.setDescription(Project.java:1336)
+	at org.eclipse.jdt.internal.core.JavaProject.setJavaCommand(JavaProject.java:3519)
+	at org.eclipse.jdt.internal.core.JavaProject.addToBuildSpec(JavaProject.java:526)
+	at org.eclipse.jdt.internal.core.JavaProject.configure(JavaProject.java:1131)
+	at org.eclipse.core.internal.resources.NatureManager$1.run(NatureManager.java:150)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.resources.NatureManager.configureNature(NatureManager.java:166)
+	at org.eclipse.core.internal.resources.NatureManager.configureNatures(NatureManager.java:212)
+	at org.eclipse.core.internal.resources.Project.basicSetDescription(Project.java:111)
+	at org.eclipse.core.internal.resources.Project.setDescription(Project.java:1309)
+	at org.eclipse.core.internal.resources.Project.setDescription(Project.java:1336)
+	at org.eclipse.jdt.internal.ui.wizards.buildpaths.BuildPathsBlock.addJavaNature(BuildPathsBlock.java:745)
+	at org.eclipse.jdt.ui.wizards.JavaCapabilityConfigurationPage.configureJavaProject(JavaCapabilityConfigurationPage.java:282)
+	at org.eclipse.jdt.ui.wizards.JavaCapabilityConfigurationPage.configureJavaProject(JavaCapabilityConfigurationPage.java:259)
+	at org.eclipse.jdt.ui.wizards.NewJavaProjectWizardPageTwo.updateProject(NewJavaProjectWizardPageTwo.java:255)
+	at org.eclipse.jdt.ui.wizards.NewJavaProjectWizardPageTwo$1UpdateRunnable.run(NewJavaProjectWizardPageTwo.java:163)
+	at org.eclipse.ui.actions.WorkspaceModifyDelegatingOperation.execute(WorkspaceModifyDelegatingOperation.java:71)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.lambda$0(WorkspaceModifyOperation.java:110)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2380)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2405)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:131)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+
+!ENTRY org.eclipse.core.resources 4 2 2023-05-02 12:50:11.213
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
+!STACK 1
+org.eclipse.core.runtime.CoreException: Could not write file: /home/david-cruz/Alura/semana_4/sintaxe-variaveis-e-fluxo/.project.
+	at org.eclipse.core.internal.filesystem.Policy.error(Policy.java:48)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.openOutputStream(LocalFile.java:448)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.write(FileSystemResourceManager.java:1175)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.internalWrite(FileSystemResourceManager.java:668)
+	at org.eclipse.core.internal.resources.Project.writeDescription(Project.java:1421)
+	at org.eclipse.core.internal.resources.Project.setDescription(Project.java:1313)
+	at org.eclipse.core.internal.resources.Project.setDescription(Project.java:1336)
+	at org.eclipse.jdt.internal.core.JavaProject.setJavaCommand(JavaProject.java:3519)
+	at org.eclipse.jdt.internal.core.JavaProject.addToBuildSpec(JavaProject.java:526)
+	at org.eclipse.jdt.internal.core.JavaProject.configure(JavaProject.java:1131)
+	at org.eclipse.core.internal.resources.NatureManager$1.run(NatureManager.java:150)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.resources.NatureManager.configureNature(NatureManager.java:166)
+	at org.eclipse.core.internal.resources.NatureManager.configureNatures(NatureManager.java:212)
+	at org.eclipse.core.internal.resources.Project.basicSetDescription(Project.java:111)
+	at org.eclipse.core.internal.resources.Project.setDescription(Project.java:1309)
+	at org.eclipse.core.internal.resources.Project.setDescription(Project.java:1336)
+	at org.eclipse.jdt.internal.ui.wizards.buildpaths.BuildPathsBlock.addJavaNature(BuildPathsBlock.java:745)
+	at org.eclipse.jdt.ui.wizards.JavaCapabilityConfigurationPage.configureJavaProject(JavaCapabilityConfigurationPage.java:282)
+	at org.eclipse.jdt.ui.wizards.JavaCapabilityConfigurationPage.configureJavaProject(JavaCapabilityConfigurationPage.java:259)
+	at org.eclipse.jdt.ui.wizards.NewJavaProjectWizardPageTwo.updateProject(NewJavaProjectWizardPageTwo.java:255)
+	at org.eclipse.jdt.ui.wizards.NewJavaProjectWizardPageTwo$1UpdateRunnable.run(NewJavaProjectWizardPageTwo.java:163)
+	at org.eclipse.ui.actions.WorkspaceModifyDelegatingOperation.execute(WorkspaceModifyDelegatingOperation.java:71)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.lambda$0(WorkspaceModifyOperation.java:110)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2380)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2405)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:131)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+Caused by: java.io.FileNotFoundException: /home/david-cruz/Alura/semana_4/sintaxe-variaveis-e-fluxo/.project (Permissão negada)
+	at java.base/java.io.FileOutputStream.open0(Native Method)
+	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:293)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:235)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.openOutputStream(LocalFile.java:438)
+	... 26 more
+!SUBENTRY 1 org.eclipse.core.filesystem 4 272 2023-05-02 12:50:11.214
+!MESSAGE Could not write file: /home/david-cruz/Alura/semana_4/sintaxe-variaveis-e-fluxo/.project.
+!STACK 0
+java.io.FileNotFoundException: /home/david-cruz/Alura/semana_4/sintaxe-variaveis-e-fluxo/.project (Permissão negada)
+	at java.base/java.io.FileOutputStream.open0(Native Method)
+	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:293)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:235)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.openOutputStream(LocalFile.java:438)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.write(FileSystemResourceManager.java:1175)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.internalWrite(FileSystemResourceManager.java:668)
+	at org.eclipse.core.internal.resources.Project.writeDescription(Project.java:1421)
+	at org.eclipse.core.internal.resources.Project.setDescription(Project.java:1313)
+	at org.eclipse.core.internal.resources.Project.setDescription(Project.java:1336)
+	at org.eclipse.jdt.internal.core.JavaProject.setJavaCommand(JavaProject.java:3519)
+	at org.eclipse.jdt.internal.core.JavaProject.addToBuildSpec(JavaProject.java:526)
+	at org.eclipse.jdt.internal.core.JavaProject.configure(JavaProject.java:1131)
+	at org.eclipse.core.internal.resources.NatureManager$1.run(NatureManager.java:150)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.resources.NatureManager.configureNature(NatureManager.java:166)
+	at org.eclipse.core.internal.resources.NatureManager.configureNatures(NatureManager.java:212)
+	at org.eclipse.core.internal.resources.Project.basicSetDescription(Project.java:111)
+	at org.eclipse.core.internal.resources.Project.setDescription(Project.java:1309)
+	at org.eclipse.core.internal.resources.Project.setDescription(Project.java:1336)
+	at org.eclipse.jdt.internal.ui.wizards.buildpaths.BuildPathsBlock.addJavaNature(BuildPathsBlock.java:745)
+	at org.eclipse.jdt.ui.wizards.JavaCapabilityConfigurationPage.configureJavaProject(JavaCapabilityConfigurationPage.java:282)
+	at org.eclipse.jdt.ui.wizards.JavaCapabilityConfigurationPage.configureJavaProject(JavaCapabilityConfigurationPage.java:259)
+	at org.eclipse.jdt.ui.wizards.NewJavaProjectWizardPageTwo.updateProject(NewJavaProjectWizardPageTwo.java:255)
+	at org.eclipse.jdt.ui.wizards.NewJavaProjectWizardPageTwo$1UpdateRunnable.run(NewJavaProjectWizardPageTwo.java:163)
+	at org.eclipse.ui.actions.WorkspaceModifyDelegatingOperation.execute(WorkspaceModifyDelegatingOperation.java:71)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.lambda$0(WorkspaceModifyOperation.java:110)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2380)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2405)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:131)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+!SUBENTRY 1 org.eclipse.core.filesystem 4 272 2023-05-02 12:50:11.214
+!MESSAGE Could not write file: /home/david-cruz/Alura/semana_4/sintaxe-variaveis-e-fluxo/.project.
+!STACK 0
+java.io.FileNotFoundException: /home/david-cruz/Alura/semana_4/sintaxe-variaveis-e-fluxo/.project (Permissão negada)
+	at java.base/java.io.FileOutputStream.open0(Native Method)
+	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:293)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:235)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.openOutputStream(LocalFile.java:438)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.write(FileSystemResourceManager.java:1175)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.internalWrite(FileSystemResourceManager.java:668)
+	at org.eclipse.core.internal.resources.Project.writeDescription(Project.java:1421)
+	at org.eclipse.core.internal.resources.Project.setDescription(Project.java:1313)
+	at org.eclipse.core.internal.resources.Project.setDescription(Project.java:1336)
+	at org.eclipse.jdt.internal.core.JavaProject.setJavaCommand(JavaProject.java:3519)
+	at org.eclipse.jdt.internal.core.JavaProject.addToBuildSpec(JavaProject.java:526)
+	at org.eclipse.jdt.internal.core.JavaProject.configure(JavaProject.java:1131)
+	at org.eclipse.core.internal.resources.NatureManager$1.run(NatureManager.java:150)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.resources.NatureManager.configureNature(NatureManager.java:166)
+	at org.eclipse.core.internal.resources.NatureManager.configureNatures(NatureManager.java:212)
+	at org.eclipse.core.internal.resources.Project.basicSetDescription(Project.java:111)
+	at org.eclipse.core.internal.resources.Project.setDescription(Project.java:1309)
+	at org.eclipse.core.internal.resources.Project.setDescription(Project.java:1336)
+	at org.eclipse.jdt.internal.ui.wizards.buildpaths.BuildPathsBlock.addJavaNature(BuildPathsBlock.java:745)
+	at org.eclipse.jdt.ui.wizards.JavaCapabilityConfigurationPage.configureJavaProject(JavaCapabilityConfigurationPage.java:282)
+	at org.eclipse.jdt.ui.wizards.JavaCapabilityConfigurationPage.configureJavaProject(JavaCapabilityConfigurationPage.java:259)
+	at org.eclipse.jdt.ui.wizards.NewJavaProjectWizardPageTwo.updateProject(NewJavaProjectWizardPageTwo.java:255)
+	at org.eclipse.jdt.ui.wizards.NewJavaProjectWizardPageTwo$1UpdateRunnable.run(NewJavaProjectWizardPageTwo.java:163)
+	at org.eclipse.ui.actions.WorkspaceModifyDelegatingOperation.execute(WorkspaceModifyDelegatingOperation.java:71)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.lambda$0(WorkspaceModifyOperation.java:110)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2380)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2405)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:131)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-05-02 12:50:11.547
+!MESSAGE <module:java.base> is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-05-02 12:50:11.548
+!MESSAGE <module:java.desktop> is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-05-02 12:50:11.551
+!MESSAGE <module:java.management> is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-05-02 12:50:11.552
+!MESSAGE <module:java.management.rmi> is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-05-02 12:50:11.555
+!MESSAGE <module:java.naming> is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-05-02 12:50:11.555
+!MESSAGE <module:java.scripting> is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-05-02 12:50:11.556
+!MESSAGE <module:java.security.sasl> is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-05-02 12:50:11.559
+!MESSAGE <module:java.sql.rowset> is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-05-02 12:50:11.560
+!MESSAGE <module:java.xml> is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-05-02 12:50:11.563
+!MESSAGE <module:java.xml.crypto> is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-05-02 12:50:11.564
+!MESSAGE <module:jdk.accessibility> is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-05-02 12:50:11.566
+!MESSAGE <module:jdk.attach> is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-05-02 12:50:11.567
+!MESSAGE <module:jdk.compiler> is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-05-02 12:50:11.568
+!MESSAGE <module:jdk.hotspot.agent> is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-05-02 12:50:11.568
+!MESSAGE <module:jdk.httpserver> is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-05-02 12:50:11.577
+!MESSAGE <module:jdk.jartool> is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-05-02 12:50:11.578
+!MESSAGE <module:jdk.jconsole> is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-05-02 12:50:11.578
+!MESSAGE <module:jdk.jdeps> is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-05-02 12:50:11.579
+!MESSAGE <module:jdk.jdi> is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-05-02 12:50:11.580
+!MESSAGE <module:jdk.management> is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-05-02 12:50:11.580
+!MESSAGE <module:jdk.naming.dns> is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-05-02 12:50:11.581
+!MESSAGE <module:jdk.naming.rmi> is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-05-02 12:50:11.581
+!MESSAGE <module:jdk.sctp> is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-05-02 12:50:11.582
+!MESSAGE <module:jdk.security.auth> is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-05-02 12:50:11.582
+!MESSAGE <module:jdk.security.jgss> is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-05-02 12:50:11.583
+!MESSAGE <module:jdk.unsupported> is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-05-02 12:50:11.583
+!MESSAGE <module:java.datatransfer> is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-05-02 12:50:11.584
+!MESSAGE <module:java.instrument> is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-05-02 12:50:11.584
+!MESSAGE <module:java.logging> is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-05-02 12:50:11.585
+!MESSAGE <module:java.net.http> is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-05-02 12:50:11.585
+!MESSAGE <module:java.prefs> is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-05-02 12:50:11.586
+!MESSAGE <module:java.rmi> is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-05-02 12:50:11.586
+!MESSAGE <module:java.sql> is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-05-02 12:50:11.586
+!MESSAGE <module:java.compiler> is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-05-02 12:50:11.597
+!MESSAGE <module:java.security.jgss> is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-05-02 12:50:11.598
+!MESSAGE <module:java.smartcardio> is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-05-02 12:50:11.598
+!MESSAGE <module:java.transaction.xa> is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-05-02 12:50:11.599
+!MESSAGE <module:jdk.dynalink> is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-05-02 12:50:11.599
+!MESSAGE <module:jdk.editpad> is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-05-02 12:50:11.600
+!MESSAGE <module:jdk.internal.ed> is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-05-02 12:50:11.601
+!MESSAGE <module:jdk.internal.le> is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-05-02 12:50:11.601
+!MESSAGE <module:jdk.internal.opt> is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-05-02 12:50:11.609
+!MESSAGE <module:jdk.internal.vm.ci> is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-05-02 12:50:11.609
+!MESSAGE <module:jdk.javadoc> is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-05-02 12:50:11.610
+!MESSAGE <module:jdk.jfr> is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-05-02 12:50:11.610
+!MESSAGE <module:jdk.jlink> is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-05-02 12:50:11.611
+!MESSAGE <module:jdk.jpackage> is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-05-02 12:50:11.611
+!MESSAGE <module:jdk.jshell> is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-05-02 12:50:11.612
+!MESSAGE <module:jdk.management.agent> is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-05-02 12:50:11.612
+!MESSAGE <module:jdk.management.jfr> is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-05-02 12:50:11.613
+!MESSAGE <module:jdk.net> is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-05-02 12:50:11.613
+!MESSAGE <module:jdk.nio.mapmode> is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-05-02 12:50:11.614
+!MESSAGE <module:jdk.random> is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-05-02 12:50:11.614
+!MESSAGE <module:jdk.unsupported.desktop> is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-05-02 12:50:11.615
+!MESSAGE <module:jdk.zipfs> is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-05-02 12:50:11.615
+!MESSAGE <module:jdk.jsobject> is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-05-02 12:50:11.615
+!MESSAGE <module:jdk.xml.dom> is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-05-02 12:50:11.616
+!MESSAGE <module:jdk.charsets> is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-05-02 12:50:11.616
+!MESSAGE <module:jdk.crypto.cryptoki> is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-05-02 12:50:11.617
+!MESSAGE <module:jdk.crypto.ec> is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-05-02 12:50:11.617
+!MESSAGE <module:jdk.internal.jvmstat> is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-05-02 12:50:11.618
+!MESSAGE <module:jdk.jcmd> is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-05-02 12:50:11.618
+!MESSAGE <module:jdk.jstatd> is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-05-02 12:50:11.618
+!MESSAGE <module:jdk.localedata> is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-05-02 12:50:11.629
+!MESSAGE <module:java.se> is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-05-02 12:50:11.629
+!MESSAGE <module:jdk.internal.vm.compiler> is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-05-02 12:50:11.630
+!MESSAGE <module:jdk.internal.vm.compiler.management> is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-05-02 12:50:11.630
+!MESSAGE <module:jdk.jdwp.agent> is not on its project's build path
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2023-05-02 12:50:11.723
+!MESSAGE Internal Error
+!STACK 1
+org.eclipse.core.runtime.CoreException: Problems encountered while setting project description.
+	at org.eclipse.core.internal.resources.Project.setDescription(Project.java:1311)
+	at org.eclipse.core.internal.resources.Project.setDescription(Project.java:1336)
+	at org.eclipse.jdt.internal.ui.wizards.buildpaths.BuildPathsBlock.addJavaNature(BuildPathsBlock.java:745)
+	at org.eclipse.jdt.ui.wizards.JavaCapabilityConfigurationPage.configureJavaProject(JavaCapabilityConfigurationPage.java:282)
+	at org.eclipse.jdt.ui.wizards.JavaCapabilityConfigurationPage.configureJavaProject(JavaCapabilityConfigurationPage.java:259)
+	at org.eclipse.jdt.ui.wizards.NewJavaProjectWizardPageTwo.updateProject(NewJavaProjectWizardPageTwo.java:255)
+	at org.eclipse.jdt.ui.wizards.NewJavaProjectWizardPageTwo$1UpdateRunnable.run(NewJavaProjectWizardPageTwo.java:163)
+	at org.eclipse.ui.actions.WorkspaceModifyDelegatingOperation.execute(WorkspaceModifyDelegatingOperation.java:71)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.lambda$0(WorkspaceModifyOperation.java:110)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2380)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2405)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:131)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+Contains: Could not write file: /home/david-cruz/Alura/semana_4/sintaxe-variaveis-e-fluxo/.project.
+java.io.FileNotFoundException: /home/david-cruz/Alura/semana_4/sintaxe-variaveis-e-fluxo/.project (Permissão negada)
+	at java.base/java.io.FileOutputStream.open0(Native Method)
+	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:293)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:235)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.openOutputStream(LocalFile.java:438)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.write(FileSystemResourceManager.java:1175)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.internalWrite(FileSystemResourceManager.java:668)
+	at org.eclipse.core.internal.resources.Project.writeDescription(Project.java:1421)
+	at org.eclipse.core.internal.resources.Project.setDescription(Project.java:1313)
+	at org.eclipse.core.internal.resources.Project.setDescription(Project.java:1336)
+	at org.eclipse.jdt.internal.core.JavaProject.setJavaCommand(JavaProject.java:3519)
+	at org.eclipse.jdt.internal.core.JavaProject.addToBuildSpec(JavaProject.java:526)
+	at org.eclipse.jdt.internal.core.JavaProject.configure(JavaProject.java:1131)
+	at org.eclipse.core.internal.resources.NatureManager$1.run(NatureManager.java:150)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.resources.NatureManager.configureNature(NatureManager.java:166)
+	at org.eclipse.core.internal.resources.NatureManager.configureNatures(NatureManager.java:212)
+	at org.eclipse.core.internal.resources.Project.basicSetDescription(Project.java:111)
+	at org.eclipse.core.internal.resources.Project.setDescription(Project.java:1309)
+	at org.eclipse.core.internal.resources.Project.setDescription(Project.java:1336)
+	at org.eclipse.jdt.internal.ui.wizards.buildpaths.BuildPathsBlock.addJavaNature(BuildPathsBlock.java:745)
+	at org.eclipse.jdt.ui.wizards.JavaCapabilityConfigurationPage.configureJavaProject(JavaCapabilityConfigurationPage.java:282)
+	at org.eclipse.jdt.ui.wizards.JavaCapabilityConfigurationPage.configureJavaProject(JavaCapabilityConfigurationPage.java:259)
+	at org.eclipse.jdt.ui.wizards.NewJavaProjectWizardPageTwo.updateProject(NewJavaProjectWizardPageTwo.java:255)
+	at org.eclipse.jdt.ui.wizards.NewJavaProjectWizardPageTwo$1UpdateRunnable.run(NewJavaProjectWizardPageTwo.java:163)
+	at org.eclipse.ui.actions.WorkspaceModifyDelegatingOperation.execute(WorkspaceModifyDelegatingOperation.java:71)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.lambda$0(WorkspaceModifyOperation.java:110)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2380)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2405)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:131)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+!SUBENTRY 1 org.eclipse.core.resources 4 568 2023-05-02 12:50:11.723
+!MESSAGE Problems encountered while setting project description.
+!SUBENTRY 2 org.eclipse.core.filesystem 4 272 2023-05-02 12:50:11.723
+!MESSAGE Could not write file: /home/david-cruz/Alura/semana_4/sintaxe-variaveis-e-fluxo/.project.
+!STACK 0
+java.io.FileNotFoundException: /home/david-cruz/Alura/semana_4/sintaxe-variaveis-e-fluxo/.project (Permissão negada)
+	at java.base/java.io.FileOutputStream.open0(Native Method)
+	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:293)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:235)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.openOutputStream(LocalFile.java:438)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.write(FileSystemResourceManager.java:1175)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.internalWrite(FileSystemResourceManager.java:668)
+	at org.eclipse.core.internal.resources.Project.writeDescription(Project.java:1421)
+	at org.eclipse.core.internal.resources.Project.setDescription(Project.java:1313)
+	at org.eclipse.core.internal.resources.Project.setDescription(Project.java:1336)
+	at org.eclipse.jdt.internal.core.JavaProject.setJavaCommand(JavaProject.java:3519)
+	at org.eclipse.jdt.internal.core.JavaProject.addToBuildSpec(JavaProject.java:526)
+	at org.eclipse.jdt.internal.core.JavaProject.configure(JavaProject.java:1131)
+	at org.eclipse.core.internal.resources.NatureManager$1.run(NatureManager.java:150)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.resources.NatureManager.configureNature(NatureManager.java:166)
+	at org.eclipse.core.internal.resources.NatureManager.configureNatures(NatureManager.java:212)
+	at org.eclipse.core.internal.resources.Project.basicSetDescription(Project.java:111)
+	at org.eclipse.core.internal.resources.Project.setDescription(Project.java:1309)
+	at org.eclipse.core.internal.resources.Project.setDescription(Project.java:1336)
+	at org.eclipse.jdt.internal.ui.wizards.buildpaths.BuildPathsBlock.addJavaNature(BuildPathsBlock.java:745)
+	at org.eclipse.jdt.ui.wizards.JavaCapabilityConfigurationPage.configureJavaProject(JavaCapabilityConfigurationPage.java:282)
+	at org.eclipse.jdt.ui.wizards.JavaCapabilityConfigurationPage.configureJavaProject(JavaCapabilityConfigurationPage.java:259)
+	at org.eclipse.jdt.ui.wizards.NewJavaProjectWizardPageTwo.updateProject(NewJavaProjectWizardPageTwo.java:255)
+	at org.eclipse.jdt.ui.wizards.NewJavaProjectWizardPageTwo$1UpdateRunnable.run(NewJavaProjectWizardPageTwo.java:163)
+	at org.eclipse.ui.actions.WorkspaceModifyDelegatingOperation.execute(WorkspaceModifyDelegatingOperation.java:71)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.lambda$0(WorkspaceModifyOperation.java:110)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2380)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2405)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:131)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2023-05-02 12:50:24.943
+!MESSAGE Internal Error
+!STACK 1
+org.eclipse.core.runtime.CoreException: Problems encountered while deleting files.
+	at org.eclipse.core.internal.filesystem.local.LocalFile.delete(LocalFile.java:141)
+	at org.eclipse.jdt.ui.wizards.NewJavaProjectWizardPageTwo.restoreExistingFiles(NewJavaProjectWizardPageTwo.java:406)
+	at org.eclipse.jdt.ui.wizards.NewJavaProjectWizardPageTwo.doRemoveProject(NewJavaProjectWizardPageTwo.java:528)
+	at org.eclipse.ui.actions.WorkspaceModifyDelegatingOperation.execute(WorkspaceModifyDelegatingOperation.java:71)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.lambda$0(WorkspaceModifyOperation.java:110)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2380)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2405)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:131)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+Contains: Could not delete: /home/david-cruz/Alura/semana_4/sintaxe-variaveis-e-fluxo/.project.
+java.nio.file.FileSystemException: /home/david-cruz/Alura/semana_4/sintaxe-variaveis-e-fluxo/.project: Valor muito grande para o tipo de dados definido
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:100)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:106)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.implDelete(UnixFileSystemProvider.java:248)
+	at java.base/sun.nio.fs.AbstractFileSystemProvider.deleteIfExists(AbstractFileSystemProvider.java:110)
+	at java.base/java.nio.file.Files.deleteIfExists(Files.java:1191)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.internalDelete(LocalFile.java:222)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.delete(LocalFile.java:139)
+	at org.eclipse.jdt.ui.wizards.NewJavaProjectWizardPageTwo.restoreExistingFiles(NewJavaProjectWizardPageTwo.java:406)
+	at org.eclipse.jdt.ui.wizards.NewJavaProjectWizardPageTwo.doRemoveProject(NewJavaProjectWizardPageTwo.java:528)
+	at org.eclipse.ui.actions.WorkspaceModifyDelegatingOperation.execute(WorkspaceModifyDelegatingOperation.java:71)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.lambda$0(WorkspaceModifyOperation.java:110)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2380)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2405)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:131)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+!SUBENTRY 1 org.eclipse.core.filesystem 4 273 2023-05-02 12:50:24.948
+!MESSAGE Problems encountered while deleting files.
+!SUBENTRY 2 org.eclipse.core.filesystem 4 273 2023-05-02 12:50:24.948
+!MESSAGE Could not delete: /home/david-cruz/Alura/semana_4/sintaxe-variaveis-e-fluxo/.project.
+!STACK 0
+java.nio.file.FileSystemException: /home/david-cruz/Alura/semana_4/sintaxe-variaveis-e-fluxo/.project: Valor muito grande para o tipo de dados definido
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:100)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:106)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.implDelete(UnixFileSystemProvider.java:248)
+	at java.base/sun.nio.fs.AbstractFileSystemProvider.deleteIfExists(AbstractFileSystemProvider.java:110)
+	at java.base/java.nio.file.Files.deleteIfExists(Files.java:1191)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.internalDelete(LocalFile.java:222)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.delete(LocalFile.java:139)
+	at org.eclipse.jdt.ui.wizards.NewJavaProjectWizardPageTwo.restoreExistingFiles(NewJavaProjectWizardPageTwo.java:406)
+	at org.eclipse.jdt.ui.wizards.NewJavaProjectWizardPageTwo.doRemoveProject(NewJavaProjectWizardPageTwo.java:528)
+	at org.eclipse.ui.actions.WorkspaceModifyDelegatingOperation.execute(WorkspaceModifyDelegatingOperation.java:71)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.lambda$0(WorkspaceModifyOperation.java:110)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2380)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2405)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:131)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+!SESSION 2023-05-03 08:33:24.801 -----------------------------------------------
+eclipse.buildId=4.27.0.20230309-1200
+java.version=17.0.6
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=pt_BR
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY ch.qos.logback.classic 1 0 2023-05-03 08:33:26.878
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2023-05-03 08:33:31.963
+!MESSAGE Logback config file: /home/david-cruz/eclipse-workspace/.metadata/.plugins/org.eclipse.m2e.logback/logback.2.1.100.20230106-1511.xml
+
+!ENTRY org.eclipse.jface 2 0 2023-05-03 08:33:36.707
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2023-05-03 08:33:36.707
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.jdt.ui.navigate.open.type"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.lsp4e.symbolinworkspace"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2023-05-03 08:33:36.707
+!MESSAGE A conflict occurred for ALT+SHIFT+R:
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.rename.element,Rename - Refactoring ,
+		Rename the selected element,
+		Category(org.eclipse.jdt.ui.category.refactoring,Refactor - Java,Java Refactoring Actions,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.jdt.ui.edit.text.java.rename.element"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.rename,Rename,
+		Rename the selected item,
+		Category(org.eclipse.ui.category.file,File,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.ui.edit.rename"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SESSION 2023-05-03 12:36:47.385 -----------------------------------------------
+eclipse.buildId=4.27.0.20230309-1200
+java.version=17.0.6
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=pt_BR
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY ch.qos.logback.classic 1 0 2023-05-03 12:36:49.137
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2023-05-03 12:36:52.519
+!MESSAGE Logback config file: /home/david-cruz/eclipse-workspace/.metadata/.plugins/org.eclipse.m2e.logback/logback.2.1.100.20230106-1511.xml
+
+!ENTRY org.eclipse.jface 2 0 2023-05-03 12:36:56.314
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2023-05-03 12:36:56.314
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.jdt.ui.navigate.open.type"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.lsp4e.symbolinworkspace"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2023-05-03 12:36:56.314
+!MESSAGE A conflict occurred for ALT+SHIFT+R:
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.rename.element,Rename - Refactoring ,
+		Rename the selected element,
+		Category(org.eclipse.jdt.ui.category.refactoring,Refactor - Java,Java Refactoring Actions,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.jdt.ui.edit.text.java.rename.element"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.rename,Rename,
+		Rename the selected item,
+		Category(org.eclipse.ui.category.file,File,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.ui.edit.rename"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SESSION 2023-05-04 09:16:01.528 -----------------------------------------------
+eclipse.buildId=4.27.0.20230309-1200
+java.version=17.0.6
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=pt_BR
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY ch.qos.logback.classic 1 0 2023-05-04 09:16:05.571
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2023-05-04 09:16:15.732
+!MESSAGE Logback config file: /home/david-cruz/eclipse-workspace/.metadata/.plugins/org.eclipse.m2e.logback/logback.2.1.100.20230106-1511.xml
+
+!ENTRY org.eclipse.jface 2 0 2023-05-04 09:16:18.281
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2023-05-04 09:16:18.281
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.jdt.ui.navigate.open.type"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.lsp4e.symbolinworkspace"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2023-05-04 09:16:18.281
+!MESSAGE A conflict occurred for ALT+SHIFT+R:
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.rename.element,Rename - Refactoring ,
+		Rename the selected element,
+		Category(org.eclipse.jdt.ui.category.refactoring,Refactor - Java,Java Refactoring Actions,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.jdt.ui.edit.text.java.rename.element"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.rename,Rename,
+		Rename the selected item,
+		Category(org.eclipse.ui.category.file,File,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.ui.edit.rename"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.jdt.core 4 4 2023-05-04 10:11:54.893
+!MESSAGE Exception occurred during compilation unit conversion:
+----------------------------------- SOURCE BEGIN -------------------------------------
+
+public class TesteIR {
+	public static void main(String[] args) {
+        double salario = 3300.0;
+
+        //ifs aqui
+        
+        if(salario<=2800.0) {
+        	System.out.println("Aliquota 7,5, dedução de RS142,00");
+        }else ifsalario<=2800.0
+	}
+
+}
+
+----------------------------------- SOURCE END -------------------------------------
+!STACK 0
+java.lang.IllegalArgumentException
+	at org.eclipse.jdt.core.dom.InfixExpression.setOperator(InfixExpression.java:383)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1287)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:2047)
+	at org.eclipse.jdt.core.dom.ASTConverter.convertToParenthesizedExpression(ASTConverter.java:3882)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1953)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1204)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1990)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3124)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:751)
+	at org.eclipse.jdt.core.dom.ASTConverter.buildBodyDeclarations(ASTConverter.java:208)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3419)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1534)
+	at org.eclipse.jdt.core.dom.AST.convertCompilationUnit(AST.java:561)
+	at org.eclipse.jdt.internal.core.CompilationUnit.buildStructure(CompilationUnit.java:201)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:266)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:597)
+	at org.eclipse.jdt.internal.core.CompilationUnit.makeConsistent(CompilationUnit.java:1148)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.makeConsistent(ReconcileWorkingCopyOperation.java:173)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.executeOperation(ReconcileWorkingCopyOperation.java:94)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:740)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:806)
+	at org.eclipse.jdt.internal.core.CompilationUnit.reconcile(CompilationUnit.java:1325)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:132)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy$1.run(JavaReconcilingStrategy.java:94)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:91)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:158)
+	at org.eclipse.jdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:94)
+	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.reconcile(JavaCompositeReconcilingStrategy.java:107)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:78)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:207)
+
+!ENTRY org.eclipse.jdt.ui 4 2 2023-05-04 10:11:54.894
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.jdt.ui".
+!STACK 0
+java.lang.IllegalArgumentException
+	at org.eclipse.jdt.core.dom.InfixExpression.setOperator(InfixExpression.java:383)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1287)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:2047)
+	at org.eclipse.jdt.core.dom.ASTConverter.convertToParenthesizedExpression(ASTConverter.java:3882)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1953)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1204)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1990)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3124)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:751)
+	at org.eclipse.jdt.core.dom.ASTConverter.buildBodyDeclarations(ASTConverter.java:208)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3419)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1534)
+	at org.eclipse.jdt.core.dom.AST.convertCompilationUnit(AST.java:561)
+	at org.eclipse.jdt.internal.core.CompilationUnit.buildStructure(CompilationUnit.java:201)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:266)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:597)
+	at org.eclipse.jdt.internal.core.CompilationUnit.makeConsistent(CompilationUnit.java:1148)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.makeConsistent(ReconcileWorkingCopyOperation.java:173)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.executeOperation(ReconcileWorkingCopyOperation.java:94)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:740)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:806)
+	at org.eclipse.jdt.internal.core.CompilationUnit.reconcile(CompilationUnit.java:1325)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:132)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy$1.run(JavaReconcilingStrategy.java:94)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:91)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:158)
+	at org.eclipse.jdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:94)
+	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.reconcile(JavaCompositeReconcilingStrategy.java:107)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:78)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:207)
+
+!ENTRY org.eclipse.jdt.ui 4 0 2023-05-04 10:11:54.895
+!MESSAGE Error in JDT Core during reconcile
+!STACK 0
+java.lang.IllegalArgumentException
+	at org.eclipse.jdt.core.dom.InfixExpression.setOperator(InfixExpression.java:383)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1287)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:2047)
+	at org.eclipse.jdt.core.dom.ASTConverter.convertToParenthesizedExpression(ASTConverter.java:3882)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1953)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1204)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1990)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3124)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:751)
+	at org.eclipse.jdt.core.dom.ASTConverter.buildBodyDeclarations(ASTConverter.java:208)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3419)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1534)
+	at org.eclipse.jdt.core.dom.AST.convertCompilationUnit(AST.java:561)
+	at org.eclipse.jdt.internal.core.CompilationUnit.buildStructure(CompilationUnit.java:201)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:266)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:597)
+	at org.eclipse.jdt.internal.core.CompilationUnit.makeConsistent(CompilationUnit.java:1148)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.makeConsistent(ReconcileWorkingCopyOperation.java:173)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.executeOperation(ReconcileWorkingCopyOperation.java:94)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:740)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:806)
+	at org.eclipse.jdt.internal.core.CompilationUnit.reconcile(CompilationUnit.java:1325)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:132)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy$1.run(JavaReconcilingStrategy.java:94)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:91)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:158)
+	at org.eclipse.jdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:94)
+	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.reconcile(JavaCompositeReconcilingStrategy.java:107)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:78)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:207)
+
+!ENTRY org.eclipse.jdt.core 4 4 2023-05-04 10:11:54.975
+!MESSAGE Exception occurred during compilation unit conversion:
+----------------------------------- SOURCE BEGIN -------------------------------------
+
+public class TesteIR {
+	public static void main(String[] args) {
+        double salario = 3300.0;
+
+        //ifs aqui
+        
+        if(salario<=2800.0) {
+        	System.out.println("Aliquota 7,5, dedução de RS142,00");
+        }else ifsalario<=2800.0
+	}
+
+}
+
+----------------------------------- SOURCE END -------------------------------------
+!STACK 0
+java.lang.IllegalArgumentException
+	at org.eclipse.jdt.core.dom.InfixExpression.setOperator(InfixExpression.java:383)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1287)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:2047)
+	at org.eclipse.jdt.core.dom.ASTConverter.convertToParenthesizedExpression(ASTConverter.java:3882)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1953)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1204)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1990)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3124)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:751)
+	at org.eclipse.jdt.core.dom.ASTConverter.buildBodyDeclarations(ASTConverter.java:208)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3419)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1534)
+	at org.eclipse.jdt.core.dom.CompilationUnitResolver.convert(CompilationUnitResolver.java:344)
+	at org.eclipse.jdt.core.dom.ASTParser.internalCreateAST(ASTParser.java:1272)
+	at org.eclipse.jdt.core.dom.ASTParser.createAST(ASTParser.java:868)
+	at org.eclipse.jdt.core.manipulation.CoreASTProvider$1.run(CoreASTProvider.java:294)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jdt.core.manipulation.CoreASTProvider.createAST(CoreASTProvider.java:286)
+	at org.eclipse.jdt.core.manipulation.CoreASTProvider.getAST(CoreASTProvider.java:199)
+	at org.eclipse.jdt.core.manipulation.SharedASTProviderCore.getAST(SharedASTProviderCore.java:138)
+	at org.eclipse.jdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup.calculateASTandInform(SelectionListenerWithASTManager.java:166)
+	at org.eclipse.jdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup$1.run(SelectionListenerWithASTManager.java:151)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.jdt.core.manipulation 4 2 2023-05-04 10:11:54.976
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.jdt.core.manipulation".
+!STACK 0
+java.lang.IllegalArgumentException
+	at org.eclipse.jdt.core.dom.InfixExpression.setOperator(InfixExpression.java:383)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1287)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:2047)
+	at org.eclipse.jdt.core.dom.ASTConverter.convertToParenthesizedExpression(ASTConverter.java:3882)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1953)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1204)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1990)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3124)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:751)
+	at org.eclipse.jdt.core.dom.ASTConverter.buildBodyDeclarations(ASTConverter.java:208)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3419)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1534)
+	at org.eclipse.jdt.core.dom.CompilationUnitResolver.convert(CompilationUnitResolver.java:344)
+	at org.eclipse.jdt.core.dom.ASTParser.internalCreateAST(ASTParser.java:1272)
+	at org.eclipse.jdt.core.dom.ASTParser.createAST(ASTParser.java:868)
+	at org.eclipse.jdt.core.manipulation.CoreASTProvider$1.run(CoreASTProvider.java:294)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jdt.core.manipulation.CoreASTProvider.createAST(CoreASTProvider.java:286)
+	at org.eclipse.jdt.core.manipulation.CoreASTProvider.getAST(CoreASTProvider.java:199)
+	at org.eclipse.jdt.core.manipulation.SharedASTProviderCore.getAST(SharedASTProviderCore.java:138)
+	at org.eclipse.jdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup.calculateASTandInform(SelectionListenerWithASTManager.java:166)
+	at org.eclipse.jdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup$1.run(SelectionListenerWithASTManager.java:151)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.jdt.core.manipulation 4 0 2023-05-04 10:11:54.976
+!MESSAGE Error in JDT Core during AST creation
+!STACK 0
+java.lang.IllegalArgumentException
+	at org.eclipse.jdt.core.dom.InfixExpression.setOperator(InfixExpression.java:383)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1287)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:2047)
+	at org.eclipse.jdt.core.dom.ASTConverter.convertToParenthesizedExpression(ASTConverter.java:3882)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1953)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1204)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1990)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3124)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:751)
+	at org.eclipse.jdt.core.dom.ASTConverter.buildBodyDeclarations(ASTConverter.java:208)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3419)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1534)
+	at org.eclipse.jdt.core.dom.CompilationUnitResolver.convert(CompilationUnitResolver.java:344)
+	at org.eclipse.jdt.core.dom.ASTParser.internalCreateAST(ASTParser.java:1272)
+	at org.eclipse.jdt.core.dom.ASTParser.createAST(ASTParser.java:868)
+	at org.eclipse.jdt.core.manipulation.CoreASTProvider$1.run(CoreASTProvider.java:294)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jdt.core.manipulation.CoreASTProvider.createAST(CoreASTProvider.java:286)
+	at org.eclipse.jdt.core.manipulation.CoreASTProvider.getAST(CoreASTProvider.java:199)
+	at org.eclipse.jdt.core.manipulation.SharedASTProviderCore.getAST(SharedASTProviderCore.java:138)
+	at org.eclipse.jdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup.calculateASTandInform(SelectionListenerWithASTManager.java:166)
+	at org.eclipse.jdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup$1.run(SelectionListenerWithASTManager.java:151)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SESSION 2023-05-08 09:53:30.012 -----------------------------------------------
+eclipse.buildId=4.27.0.20230309-1200
+java.version=17.0.6
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=pt_BR
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY ch.qos.logback.classic 1 0 2023-05-08 09:53:31.900
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2023-05-08 09:53:33.814
+!MESSAGE Logback config file: /home/david-cruz/eclipse-workspace/.metadata/.plugins/org.eclipse.m2e.logback/logback.2.1.100.20230106-1511.xml
+
+!ENTRY org.eclipse.jface 2 0 2023-05-08 09:53:36.943
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2023-05-08 09:53:36.943
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.jdt.ui.navigate.open.type"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.lsp4e.symbolinworkspace"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2023-05-08 09:53:36.943
+!MESSAGE A conflict occurred for ALT+SHIFT+R:
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.rename.element,Rename - Refactoring ,
+		Rename the selected element,
+		Category(org.eclipse.jdt.ui.category.refactoring,Refactor - Java,Java Refactoring Actions,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.jdt.ui.edit.text.java.rename.element"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.rename,Rename,
+		Rename the selected item,
+		Category(org.eclipse.ui.category.file,File,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.ui.edit.rename"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SESSION 2023-05-09 09:15:50.332 -----------------------------------------------
+eclipse.buildId=4.27.0.20230309-1200
+java.version=17.0.6
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=pt_BR
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY ch.qos.logback.classic 1 0 2023-05-09 09:15:52.007
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2023-05-09 09:15:53.728
+!MESSAGE Logback config file: /home/david-cruz/eclipse-workspace/.metadata/.plugins/org.eclipse.m2e.logback/logback.2.1.100.20230106-1511.xml
+
+!ENTRY org.eclipse.jface 2 0 2023-05-09 09:15:57.203
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2023-05-09 09:15:57.203
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.jdt.ui.navigate.open.type"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.lsp4e.symbolinworkspace"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2023-05-09 09:15:57.203
+!MESSAGE A conflict occurred for ALT+SHIFT+R:
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.rename.element,Rename - Refactoring ,
+		Rename the selected element,
+		Category(org.eclipse.jdt.ui.category.refactoring,Refactor - Java,Java Refactoring Actions,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.jdt.ui.edit.text.java.rename.element"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.rename,Rename,
+		Rename the selected item,
+		Category(org.eclipse.ui.category.file,File,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.ui.edit.rename"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SESSION 2023-05-09 21:07:07.052 -----------------------------------------------
+eclipse.buildId=4.27.0.20230309-1200
+java.version=17.0.6
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=pt_BR
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY ch.qos.logback.classic 1 0 2023-05-09 21:07:08.965
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2023-05-09 21:07:10.581
+!MESSAGE Logback config file: /home/david-cruz/eclipse-workspace/.metadata/.plugins/org.eclipse.m2e.logback/logback.2.1.100.20230106-1511.xml
+
+!ENTRY org.eclipse.jface 2 0 2023-05-09 21:07:13.430
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2023-05-09 21:07:13.431
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.jdt.ui.navigate.open.type"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.lsp4e.symbolinworkspace"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2023-05-09 21:07:13.431
+!MESSAGE A conflict occurred for ALT+SHIFT+R:
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.rename.element,Rename - Refactoring ,
+		Rename the selected element,
+		Category(org.eclipse.jdt.ui.category.refactoring,Refactor - Java,Java Refactoring Actions,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.jdt.ui.edit.text.java.rename.element"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.rename,Rename,
+		Rename the selected item,
+		Category(org.eclipse.ui.category.file,File,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.ui.edit.rename"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SESSION 2023-05-10 12:24:06.162 -----------------------------------------------
+eclipse.buildId=4.27.0.20230309-1200
+java.version=17.0.6
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=pt_BR
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY ch.qos.logback.classic 1 0 2023-05-10 12:24:08.142
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2023-05-10 12:24:09.956
+!MESSAGE Logback config file: /home/david-cruz/eclipse-workspace/.metadata/.plugins/org.eclipse.m2e.logback/logback.2.1.100.20230106-1511.xml
+
+!ENTRY org.eclipse.jface 2 0 2023-05-10 12:24:13.322
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2023-05-10 12:24:13.322
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.jdt.ui.navigate.open.type"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.lsp4e.symbolinworkspace"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2023-05-10 12:24:13.323
+!MESSAGE A conflict occurred for ALT+SHIFT+R:
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.rename.element,Rename - Refactoring ,
+		Rename the selected element,
+		Category(org.eclipse.jdt.ui.category.refactoring,Refactor - Java,Java Refactoring Actions,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.jdt.ui.edit.text.java.rename.element"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.rename,Rename,
+		Rename the selected item,
+		Category(org.eclipse.ui.category.file,File,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.ui.edit.rename"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SESSION 2023-05-10 13:42:42.339 -----------------------------------------------
+eclipse.buildId=4.27.0.20230309-1200
+java.version=17.0.6
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=pt_BR
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY ch.qos.logback.classic 1 0 2023-05-10 13:42:43.838
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2023-05-10 13:42:45.556
+!MESSAGE Logback config file: /home/david-cruz/eclipse-workspace/.metadata/.plugins/org.eclipse.m2e.logback/logback.2.1.100.20230106-1511.xml
+
+!ENTRY org.eclipse.jface 2 0 2023-05-10 13:42:48.316
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2023-05-10 13:42:48.316
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.jdt.ui.navigate.open.type"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.lsp4e.symbolinworkspace"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2023-05-10 13:42:48.316
+!MESSAGE A conflict occurred for ALT+SHIFT+R:
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.rename.element,Rename - Refactoring ,
+		Rename the selected element,
+		Category(org.eclipse.jdt.ui.category.refactoring,Refactor - Java,Java Refactoring Actions,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.jdt.ui.edit.text.java.rename.element"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.rename,Rename,
+		Rename the selected item,
+		Category(org.eclipse.ui.category.file,File,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.ui.edit.rename"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SESSION 2023-06-17 15:13:14.880 -----------------------------------------------
+eclipse.buildId=4.27.0.20230309-1200
+java.version=17.0.6
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=pt_BR
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY ch.qos.logback.classic 1 0 2023-06-17 15:13:16.783
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY org.eclipse.core.resources 4 567 2023-06-17 15:13:17.914
+!MESSAGE Workspace restored, but some problems occurred.
+!SUBENTRY 1 org.eclipse.core.resources 4 567 2023-06-17 15:13:17.914
+!MESSAGE Could not read metadata for 'bytebank-encapsulado'.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException(/bytebank-encapsulado)[567]: java.lang.Exception: The project description file (.project) for 'bytebank-encapsulado' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:908)
+	at org.eclipse.core.internal.resources.SaveManager.restoreMetaInfo(SaveManager.java:894)
+	at org.eclipse.core.internal.resources.SaveManager.restoreMetaInfo(SaveManager.java:874)
+	at org.eclipse.core.internal.resources.SaveManager.restore(SaveManager.java:730)
+	at org.eclipse.core.internal.resources.SaveManager.startup(SaveManager.java:1584)
+	at org.eclipse.core.internal.resources.Workspace.startup(Workspace.java:2547)
+	at org.eclipse.core.internal.resources.Workspace.open(Workspace.java:2252)
+	at org.eclipse.core.resources.ResourcesPlugin$WorkspaceInitCustomizer.addingService(ResourcesPlugin.java:571)
+	at org.eclipse.core.resources.ResourcesPlugin$WorkspaceInitCustomizer.addingService(ResourcesPlugin.java:1)
+	at org.osgi.util.tracker.ServiceTracker$Tracked.customizerAdding(ServiceTracker.java:943)
+	at org.osgi.util.tracker.ServiceTracker$Tracked.customizerAdding(ServiceTracker.java:1)
+	at org.osgi.util.tracker.AbstractTracked.trackAdding(AbstractTracked.java:256)
+	at org.osgi.util.tracker.AbstractTracked.trackInitial(AbstractTracked.java:183)
+	at org.osgi.util.tracker.ServiceTracker.open(ServiceTracker.java:321)
+	at org.osgi.util.tracker.ServiceTracker.open(ServiceTracker.java:264)
+	at org.eclipse.core.resources.ResourcesPlugin.start(ResourcesPlugin.java:545)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$2.run(BundleContextImpl.java:818)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$2.run(BundleContextImpl.java:1)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:569)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:810)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:767)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:1032)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:371)
+	at org.eclipse.osgi.container.Module.doStart(Module.java:605)
+	at org.eclipse.osgi.container.Module.start(Module.java:468)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:513)
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:117)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:570)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:335)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:397)
+	at org.eclipse.osgi.internal.loader.sources.SingleSourcePackage.loadClass(SingleSourcePackage.java:41)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass0(BundleLoader.java:496)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:416)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:168)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:153)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1440)
+!SUBENTRY 2 org.eclipse.core.resources 4 567 2023-06-17 15:13:17.916
+!MESSAGE The project description file (.project) for 'bytebank-encapsulado' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
+!STACK 0
+java.lang.Exception: The project description file (.project) for 'bytebank-encapsulado' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:908)
+	at org.eclipse.core.internal.resources.SaveManager.restoreMetaInfo(SaveManager.java:894)
+	at org.eclipse.core.internal.resources.SaveManager.restoreMetaInfo(SaveManager.java:874)
+	at org.eclipse.core.internal.resources.SaveManager.restore(SaveManager.java:730)
+	at org.eclipse.core.internal.resources.SaveManager.startup(SaveManager.java:1584)
+	at org.eclipse.core.internal.resources.Workspace.startup(Workspace.java:2547)
+	at org.eclipse.core.internal.resources.Workspace.open(Workspace.java:2252)
+	at org.eclipse.core.resources.ResourcesPlugin$WorkspaceInitCustomizer.addingService(ResourcesPlugin.java:571)
+	at org.eclipse.core.resources.ResourcesPlugin$WorkspaceInitCustomizer.addingService(ResourcesPlugin.java:1)
+	at org.osgi.util.tracker.ServiceTracker$Tracked.customizerAdding(ServiceTracker.java:943)
+	at org.osgi.util.tracker.ServiceTracker$Tracked.customizerAdding(ServiceTracker.java:1)
+	at org.osgi.util.tracker.AbstractTracked.trackAdding(AbstractTracked.java:256)
+	at org.osgi.util.tracker.AbstractTracked.trackInitial(AbstractTracked.java:183)
+	at org.osgi.util.tracker.ServiceTracker.open(ServiceTracker.java:321)
+	at org.osgi.util.tracker.ServiceTracker.open(ServiceTracker.java:264)
+	at org.eclipse.core.resources.ResourcesPlugin.start(ResourcesPlugin.java:545)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$2.run(BundleContextImpl.java:818)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$2.run(BundleContextImpl.java:1)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:569)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:810)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:767)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:1032)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:371)
+	at org.eclipse.osgi.container.Module.doStart(Module.java:605)
+	at org.eclipse.osgi.container.Module.start(Module.java:468)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:513)
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:117)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:570)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:335)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:397)
+	at org.eclipse.osgi.internal.loader.sources.SingleSourcePackage.loadClass(SingleSourcePackage.java:41)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass0(BundleLoader.java:496)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:416)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:168)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:153)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1440)
+!SUBENTRY 1 org.eclipse.core.resources 4 567 2023-06-17 15:13:17.917
+!MESSAGE Could not read metadata for 'sintaxe-basica'.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException(/sintaxe-basica)[567]: java.lang.Exception: The project description file (.project) for 'sintaxe-basica' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:908)
+	at org.eclipse.core.internal.resources.SaveManager.restoreMetaInfo(SaveManager.java:894)
+	at org.eclipse.core.internal.resources.SaveManager.restoreMetaInfo(SaveManager.java:874)
+	at org.eclipse.core.internal.resources.SaveManager.restore(SaveManager.java:730)
+	at org.eclipse.core.internal.resources.SaveManager.startup(SaveManager.java:1584)
+	at org.eclipse.core.internal.resources.Workspace.startup(Workspace.java:2547)
+	at org.eclipse.core.internal.resources.Workspace.open(Workspace.java:2252)
+	at org.eclipse.core.resources.ResourcesPlugin$WorkspaceInitCustomizer.addingService(ResourcesPlugin.java:571)
+	at org.eclipse.core.resources.ResourcesPlugin$WorkspaceInitCustomizer.addingService(ResourcesPlugin.java:1)
+	at org.osgi.util.tracker.ServiceTracker$Tracked.customizerAdding(ServiceTracker.java:943)
+	at org.osgi.util.tracker.ServiceTracker$Tracked.customizerAdding(ServiceTracker.java:1)
+	at org.osgi.util.tracker.AbstractTracked.trackAdding(AbstractTracked.java:256)
+	at org.osgi.util.tracker.AbstractTracked.trackInitial(AbstractTracked.java:183)
+	at org.osgi.util.tracker.ServiceTracker.open(ServiceTracker.java:321)
+	at org.osgi.util.tracker.ServiceTracker.open(ServiceTracker.java:264)
+	at org.eclipse.core.resources.ResourcesPlugin.start(ResourcesPlugin.java:545)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$2.run(BundleContextImpl.java:818)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$2.run(BundleContextImpl.java:1)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:569)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:810)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:767)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:1032)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:371)
+	at org.eclipse.osgi.container.Module.doStart(Module.java:605)
+	at org.eclipse.osgi.container.Module.start(Module.java:468)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:513)
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:117)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:570)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:335)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:397)
+	at org.eclipse.osgi.internal.loader.sources.SingleSourcePackage.loadClass(SingleSourcePackage.java:41)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass0(BundleLoader.java:496)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:416)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:168)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:153)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1440)
+!SUBENTRY 2 org.eclipse.core.resources 4 567 2023-06-17 15:13:17.918
+!MESSAGE The project description file (.project) for 'sintaxe-basica' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
+!STACK 0
+java.lang.Exception: The project description file (.project) for 'sintaxe-basica' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:908)
+	at org.eclipse.core.internal.resources.SaveManager.restoreMetaInfo(SaveManager.java:894)
+	at org.eclipse.core.internal.resources.SaveManager.restoreMetaInfo(SaveManager.java:874)
+	at org.eclipse.core.internal.resources.SaveManager.restore(SaveManager.java:730)
+	at org.eclipse.core.internal.resources.SaveManager.startup(SaveManager.java:1584)
+	at org.eclipse.core.internal.resources.Workspace.startup(Workspace.java:2547)
+	at org.eclipse.core.internal.resources.Workspace.open(Workspace.java:2252)
+	at org.eclipse.core.resources.ResourcesPlugin$WorkspaceInitCustomizer.addingService(ResourcesPlugin.java:571)
+	at org.eclipse.core.resources.ResourcesPlugin$WorkspaceInitCustomizer.addingService(ResourcesPlugin.java:1)
+	at org.osgi.util.tracker.ServiceTracker$Tracked.customizerAdding(ServiceTracker.java:943)
+	at org.osgi.util.tracker.ServiceTracker$Tracked.customizerAdding(ServiceTracker.java:1)
+	at org.osgi.util.tracker.AbstractTracked.trackAdding(AbstractTracked.java:256)
+	at org.osgi.util.tracker.AbstractTracked.trackInitial(AbstractTracked.java:183)
+	at org.osgi.util.tracker.ServiceTracker.open(ServiceTracker.java:321)
+	at org.osgi.util.tracker.ServiceTracker.open(ServiceTracker.java:264)
+	at org.eclipse.core.resources.ResourcesPlugin.start(ResourcesPlugin.java:545)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$2.run(BundleContextImpl.java:818)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$2.run(BundleContextImpl.java:1)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:569)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:810)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:767)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:1032)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:371)
+	at org.eclipse.osgi.container.Module.doStart(Module.java:605)
+	at org.eclipse.osgi.container.Module.start(Module.java:468)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:513)
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:117)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:570)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:335)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:397)
+	at org.eclipse.osgi.internal.loader.sources.SingleSourcePackage.loadClass(SingleSourcePackage.java:41)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass0(BundleLoader.java:496)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:416)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:168)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:153)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1440)
+!SUBENTRY 1 org.eclipse.core.resources 4 567 2023-06-17 15:13:17.919
+!MESSAGE Could not read metadata for 'sintaxe-variaveis-e-fluxo'.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException(/sintaxe-variaveis-e-fluxo)[567]: java.lang.Exception: The project description file (.project) for 'sintaxe-variaveis-e-fluxo' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:908)
+	at org.eclipse.core.internal.resources.SaveManager.restoreMetaInfo(SaveManager.java:894)
+	at org.eclipse.core.internal.resources.SaveManager.restoreMetaInfo(SaveManager.java:874)
+	at org.eclipse.core.internal.resources.SaveManager.restore(SaveManager.java:730)
+	at org.eclipse.core.internal.resources.SaveManager.startup(SaveManager.java:1584)
+	at org.eclipse.core.internal.resources.Workspace.startup(Workspace.java:2547)
+	at org.eclipse.core.internal.resources.Workspace.open(Workspace.java:2252)
+	at org.eclipse.core.resources.ResourcesPlugin$WorkspaceInitCustomizer.addingService(ResourcesPlugin.java:571)
+	at org.eclipse.core.resources.ResourcesPlugin$WorkspaceInitCustomizer.addingService(ResourcesPlugin.java:1)
+	at org.osgi.util.tracker.ServiceTracker$Tracked.customizerAdding(ServiceTracker.java:943)
+	at org.osgi.util.tracker.ServiceTracker$Tracked.customizerAdding(ServiceTracker.java:1)
+	at org.osgi.util.tracker.AbstractTracked.trackAdding(AbstractTracked.java:256)
+	at org.osgi.util.tracker.AbstractTracked.trackInitial(AbstractTracked.java:183)
+	at org.osgi.util.tracker.ServiceTracker.open(ServiceTracker.java:321)
+	at org.osgi.util.tracker.ServiceTracker.open(ServiceTracker.java:264)
+	at org.eclipse.core.resources.ResourcesPlugin.start(ResourcesPlugin.java:545)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$2.run(BundleContextImpl.java:818)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$2.run(BundleContextImpl.java:1)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:569)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:810)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:767)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:1032)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:371)
+	at org.eclipse.osgi.container.Module.doStart(Module.java:605)
+	at org.eclipse.osgi.container.Module.start(Module.java:468)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:513)
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:117)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:570)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:335)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:397)
+	at org.eclipse.osgi.internal.loader.sources.SingleSourcePackage.loadClass(SingleSourcePackage.java:41)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass0(BundleLoader.java:496)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:416)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:168)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:153)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1440)
+!SUBENTRY 2 org.eclipse.core.resources 4 567 2023-06-17 15:13:17.921
+!MESSAGE The project description file (.project) for 'sintaxe-variaveis-e-fluxo' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
+!STACK 0
+java.lang.Exception: The project description file (.project) for 'sintaxe-variaveis-e-fluxo' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:908)
+	at org.eclipse.core.internal.resources.SaveManager.restoreMetaInfo(SaveManager.java:894)
+	at org.eclipse.core.internal.resources.SaveManager.restoreMetaInfo(SaveManager.java:874)
+	at org.eclipse.core.internal.resources.SaveManager.restore(SaveManager.java:730)
+	at org.eclipse.core.internal.resources.SaveManager.startup(SaveManager.java:1584)
+	at org.eclipse.core.internal.resources.Workspace.startup(Workspace.java:2547)
+	at org.eclipse.core.internal.resources.Workspace.open(Workspace.java:2252)
+	at org.eclipse.core.resources.ResourcesPlugin$WorkspaceInitCustomizer.addingService(ResourcesPlugin.java:571)
+	at org.eclipse.core.resources.ResourcesPlugin$WorkspaceInitCustomizer.addingService(ResourcesPlugin.java:1)
+	at org.osgi.util.tracker.ServiceTracker$Tracked.customizerAdding(ServiceTracker.java:943)
+	at org.osgi.util.tracker.ServiceTracker$Tracked.customizerAdding(ServiceTracker.java:1)
+	at org.osgi.util.tracker.AbstractTracked.trackAdding(AbstractTracked.java:256)
+	at org.osgi.util.tracker.AbstractTracked.trackInitial(AbstractTracked.java:183)
+	at org.osgi.util.tracker.ServiceTracker.open(ServiceTracker.java:321)
+	at org.osgi.util.tracker.ServiceTracker.open(ServiceTracker.java:264)
+	at org.eclipse.core.resources.ResourcesPlugin.start(ResourcesPlugin.java:545)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$2.run(BundleContextImpl.java:818)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$2.run(BundleContextImpl.java:1)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:569)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:810)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:767)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:1032)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:371)
+	at org.eclipse.osgi.container.Module.doStart(Module.java:605)
+	at org.eclipse.osgi.container.Module.start(Module.java:468)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:513)
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:117)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:570)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:335)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:397)
+	at org.eclipse.osgi.internal.loader.sources.SingleSourcePackage.loadClass(SingleSourcePackage.java:41)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass0(BundleLoader.java:496)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:416)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:168)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:153)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1440)
+
+!ENTRY ch.qos.logback.classic 1 0 2023-06-17 15:13:18.446
+!MESSAGE Logback config file: /home/david-cruz/eclipse-workspace/.metadata/.plugins/org.eclipse.m2e.logback/logback.2.1.100.20230106-1511.xml
+
+!ENTRY org.eclipse.jface 2 0 2023-06-17 15:13:21.224
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2023-06-17 15:13:21.224
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.jdt.ui.navigate.open.type"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.lsp4e.symbolinworkspace"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2023-06-17 15:13:21.224
+!MESSAGE A conflict occurred for ALT+SHIFT+R:
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.rename.element,Rename - Refactoring ,
+		Rename the selected element,
+		Category(org.eclipse.jdt.ui.category.refactoring,Refactor - Java,Java Refactoring Actions,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.jdt.ui.edit.text.java.rename.element"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.rename,Rename,
+		Rename the selected item,
+		Category(org.eclipse.ui.category.file,File,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.ui.edit.rename"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.oomph.setup.editor 2 0 2023-06-17 15:13:34.762
+!MESSAGE Could not open a web browser because there are none configured. Check the Web Browser preferences.
+!STACK 1
+org.eclipse.ui.PartInitException: Could not open a web browser because there are none configured. Check the Web Browser preferences.
+	at org.eclipse.ui.internal.browser.DefaultBrowserSupport.createBrowser(DefaultBrowserSupport.java:104)
+	at org.eclipse.ui.internal.browser.WorkbenchBrowserSupport.createBrowser(WorkbenchBrowserSupport.java:92)
+	at org.eclipse.oomph.setup.presentation.handlers.DonateHandler.execute(DonateHandler.java:66)
+	at org.eclipse.ui.internal.handlers.HandlerProxy.execute(HandlerProxy.java:283)
+	at org.eclipse.ui.internal.handlers.E4HandlerProxy.execute(E4HandlerProxy.java:97)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invokeUsingClass(InjectorImpl.java:317)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invoke(InjectorImpl.java:251)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.invoke(ContextInjectionFactory.java:173)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceHandler.execute(HandlerServiceHandler.java:156)
+	at org.eclipse.core.commands.Command.executeWithChecks(Command.java:488)
+	at org.eclipse.oomph.setup.ui.SetupUIPlugin$2.run(SetupUIPlugin.java:371)
+	at org.eclipse.oomph.ui.UIUtil$5.run(UIUtil.java:571)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:132)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:5040)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:4520)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:643)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:550)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:171)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1440)
+!SUBENTRY 1 org.eclipse.ui 4 0 2023-06-17 15:13:34.763
+!MESSAGE Could not open a web browser because there are none configured. Check the Web Browser preferences.

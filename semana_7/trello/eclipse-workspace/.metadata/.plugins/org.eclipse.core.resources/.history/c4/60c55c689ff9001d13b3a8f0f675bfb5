@@ -1,0 +1,21 @@
+
+public class TesteSemana6 {
+	public static void main(String[] args) {
+		Cliente teste = new Cliente();
+		teste.setNome("Sierra Valve");
+		teste.setCpf("111111111-1");
+		teste.setProfissao("Editor");
+		Compra cp = new Compra(teste);
+		cp.registraCompra(51);
+		System.out.println(teste.getPontos());
+		System.out.println(cp.getTotalCompras());
+		
+		ControladorPontuacao controladorTeste = new ControladorPontuacao(teste);
+		controladorTeste.CarteiraFidelidade(teste);
+		Cliente classificado = controladorTeste.atualizaStatus();
+		
+		System.out.println(classificado);
+		
+	}
+
+}

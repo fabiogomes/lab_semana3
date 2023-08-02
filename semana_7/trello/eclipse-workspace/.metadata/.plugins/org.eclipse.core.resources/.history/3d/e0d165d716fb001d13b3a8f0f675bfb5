@@ -1,0 +1,17 @@
+
+public class TestaIPVA {
+	public static void main(String[] args) {
+		IPVAAutomovel carro = new IPVAAutomovel();
+		carro.calcula(100000);
+		
+		IPVAMoto moto = new IPVAMoto();
+		moto.calcula(20000);
+		
+		ControladorDeIPVA controle = new ControladorDeIPVA();
+		controle.registra(carro);
+		controle.registra(moto);
+		
+		System.out.println(controle.getTotalPagoIPVA());
+	}
+
+}

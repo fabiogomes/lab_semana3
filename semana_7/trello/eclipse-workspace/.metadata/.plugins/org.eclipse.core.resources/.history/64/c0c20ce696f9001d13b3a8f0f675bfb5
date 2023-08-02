@@ -1,0 +1,7 @@
+
+public class ClientePrata extends Cliente{
+	public void statusPontuacao() {
+		// TODO Auto-generated method stub
+		System.out.println("Cliente Prata");
+	}
+}

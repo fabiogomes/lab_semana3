@@ -1,0 +1,7 @@
+
+public class Compra {
+	private Cliente cliente;
+	private double TCompras;
+	
+
+}
