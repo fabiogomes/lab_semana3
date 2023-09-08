@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Foguete">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../Foguete/out/artifacts/Foguete_excessao_jar/Foguete.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
