@@ -1,0 +1,44 @@
+
+public class ControladorPontuacao {	
+	public Cliente atualizaStatus(Compra compra ) {
+		
+		if((compra.getPontos() >= 5) & (compra.getPontos() <= 9)) {
+			ClienteBronze cb = new ClienteBronze();
+			cb.setNome(cliente.getNome());
+			cb.setCpf(cliente.getCpf());
+			cb.setProfissao(cliente.getProfissao());
+			cb.setPontos(cliente.getPontos());
+			return clienteClassificado;		
+		
+		}else if((cliente.getPontos() >= 50.1) & (cliente.getPontos() <= 100.9)) {
+			ClientePrata cp = new ClientePrata();
+			cp.setNome(cliente.getNome());
+			cp.setCpf(cliente.getCpf());
+			cp.setProfissao(cliente.getProfissao());
+			cp.setPontos(cliente.getPontos());
+			clienteClassificado = cp;
+			return clienteClassificado;		
+		
+		}else if(cliente.getPontos() >= 101){
+			ClienteOuro co = new ClienteOuro();
+			co.setNome(cliente.getNome());
+			co.setCpf(cliente.getCpf());
+			co.setProfissao(cliente.getProfissao());
+			co.setPontos(cliente.getPontos());
+			clienteClassificado = co;
+			return clienteClassificado;
+		}
+		
+		return cliente;
+			
+	}
+	
+	public void CarteiraFidelidade(Cliente cliente) {
+		Cliente teste = atualizaStatus();
+		System.out.println("* :: Cartao de Fidelidade COMEX ::");
+		System.out.println("* NOME: " + teste.getNome());
+		System.out.println("* SALDO DE ESTRELAS: " + teste.getPontos());
+		System.out.print("* CATEGORIA DE Cliente: ");
+		teste.statusPontuacao();
+	}
+}

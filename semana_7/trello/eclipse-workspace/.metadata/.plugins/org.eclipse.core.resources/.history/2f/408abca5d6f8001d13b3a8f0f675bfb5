@@ -1,0 +1,43 @@
+
+public class ControladorPontuacao {
+	private Cliente cliente;
+	
+	public ControladorPontuacao(Cliente cliente) {
+		this.cliente = cliente;
+	}
+	
+	public Cliente atualizaStatus() {
+		
+		if((cliente.showNivel() >= 5) & (cliente.showNivel() <= 9)) {
+			ClienteBronze cb = new ClienteBronze();
+			cb.setNome(cliente.getNome());
+			cb.setCpf(cliente.getCpf());
+			cb.setProfissao(cliente.getProfissao());
+			return cb;		
+		
+		}else if((cliente.showNivel() >= 50.1) & (cliente.showNivel() <= 100.9)) {
+			ClientePrata cp = new ClientePrata();
+			cp.setNome(cliente.getNome());
+			cp.setCpf(cliente.getCpf());
+			cp.setProfissao(cliente.getProfissao());
+			return cp;		
+		
+		}else if(cliente.showNivel() >= 101){
+			ClienteOuro co = new ClienteOuro();
+			co.setNome(cliente.getNome());
+			co.setCpf(cliente.getCpf());
+			co.setProfissao(cliente.getProfissao());
+			return co;
+		}
+		
+		return cliente;
+			
+	}
+	
+	public void CarteiraFidelidade(Cliente cliente) {
+		System.out.println("* :: Cartao de Fidelidade COMEX ::");
+		System.out.println("* NOME: " + cliente.getNome());
+		System.out.println("* SALDO DE ESTRELAS: " + cliente.showNivel());
+		System.out.println("* CATEGORIA DE Cliente: " + cliente.showNivel());
+	}
+}

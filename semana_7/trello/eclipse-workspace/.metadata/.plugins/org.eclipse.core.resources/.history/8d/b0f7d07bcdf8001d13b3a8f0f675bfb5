@@ -1,0 +1,11 @@
+
+public class TesteCompra {
+	public static void main(String[] args) {
+		Cliente teste = new Cliente();
+		Compra cp = new Compra(teste);
+		cp.registraCompra(50);
+		System.out.println(teste.getPontos());
+		System.out.println(cp.getTotalCompras());
+	}
+
+}

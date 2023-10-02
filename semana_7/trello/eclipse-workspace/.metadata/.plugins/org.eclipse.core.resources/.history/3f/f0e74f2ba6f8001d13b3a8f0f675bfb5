@@ -1,0 +1,9 @@
+
+public class ClienteBronze extends Cliente{
+	public void showNivel() {
+		// TODO Auto-generated method stub
+		if(super.pontos == 0) {
+			System.out.println("Sem estrelas");
+			}
+	}
+}

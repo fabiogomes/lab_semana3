@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="Foguete_excessao:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Foguete_excessao_jar</output-path>
+    <root id="archive" name="Foguete.jar">
+      <element id="module-output" name="Foguete" />
+    </root>
+  </artifact>
+</component>
