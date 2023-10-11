@@ -1,0 +1,5 @@
+
+public interface Documento {
+	public abstract Exibir (String mensagem);
+
+}
