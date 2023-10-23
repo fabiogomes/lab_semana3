@@ -1,0 +1,8 @@
+
+public class ClientePrata {
+	public double showNivel() {
+		// TODO Auto-generated method stub
+		System.out.println("Cliente Prata");
+		return pontos;
+	}
+}

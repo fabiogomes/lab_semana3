@@ -1,0 +1,6 @@
+USE LAB_COMEX;
+
+SELECT NOME, UF, (
+	CASE WHEN UF = 'RJ' THEN 'Sudeste'
+	WHEN UF = 'MA' THEN 'Nordeste'
+	ELSE 'Não informado' END) AS [REGIAO] FROM CLIENTES;

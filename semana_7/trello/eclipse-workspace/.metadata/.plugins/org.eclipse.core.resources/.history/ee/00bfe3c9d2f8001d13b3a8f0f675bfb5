@@ -1,0 +1,24 @@
+
+public class ControladorPontuacao {
+	private Cliente cliente;
+	
+	public ControladorPontuacao(Cliente cliente) {
+		this.cliente = cliente;
+	}
+	
+	public void atualizaStatus() {
+		
+		if((this.showNivel() >= 5) & (this.totalCompras <= 9)) {
+			this.cliente.pontos += 5;
+		
+		
+		}else if((this.totalCompras >= 50.1) & (this.totalCompras <= 100.9)) {
+			this.cliente.pontos += 10;
+		
+		
+		}else if(this.totalCompras >= 101){
+			this.cliente.pontos += 15;
+		}
+			
+	}
+}
