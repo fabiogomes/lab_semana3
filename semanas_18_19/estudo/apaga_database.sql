@@ -1,0 +1,17 @@
+EXEC msdb.dbo.sp_delete_database_backuphistory @database_name = N'SUCOS_VENDAS_06'
+GO
+USE [master]
+GO
+/****** Object:  Database [SUCOS_VENDAS_06]    Script Date: 15/08/2023 13:07:56 ******/
+DROP DATABASE [SUCOS_VENDAS_06]
+GO
+
+DROP DATABASE [SUCOS_VENDAS_04];
+
+DROP DATABASE [SUCOS_VENDAS_03];
+
+DROP DATABASE [SUCOS_VENDAS_02];
+
+DROP DATABASE [SUCOS_VENDAS_01];
+
+CREATE DATABASE SUCOS_VENDAS;
